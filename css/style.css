@@ -64,7 +64,7 @@ a:hover {
 }
 
 /* ----- BUTTONS ----- */
-.button {
+.button , .btn{
 	font-size: 16pt;
 	color: white;
 	transition: all 0.3s ease;
@@ -77,12 +77,12 @@ a:hover {
 	border: 2px solid;
 }
 
-.button:active {
+.button:active , .btn:active {
 	transform: translateY(4px);
 	top: 4px;
 }
 
-.button.hover {
+.button.hover , .btn.hover{
 	background-color: red;
 }
 
