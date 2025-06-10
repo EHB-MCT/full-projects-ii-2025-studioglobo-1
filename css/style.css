@@ -48,11 +48,12 @@ h6 {
 }
 
 p {
-	margin-bottom: 16pt;
+	margin-bottom: 14pt;
 }
 
 a {
 	color: #ffa63d;
+    font-size: 20px;
 	text-decoration: underline;
 	transition: color 0.3s;
 }
