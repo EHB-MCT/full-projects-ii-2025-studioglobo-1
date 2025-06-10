@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Styleguide</title>
-  <link href="./css/reset.css" rel="stylesheet" type="text/css" />
-  <link href="./css/style.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Styleguide</title>
+		<link href="./css/reset.css" rel="stylesheet" type="text/css" />
+		<link href="./css/styleguide.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<section>
+			<h1>Typography</h1>
+			<h1>Heading 1</h1>
+			<h2>Heading 2</h2>
+			<h3>Heading 3</h3>
+			<p>
+				Paragraph text. <strong>Bold</strong>, <em>Italic</em>,
+				<a href="#">Link</a>
+			</p>
+		</section>
 
-  <section>
-    <h1>Typography</h1>
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <p>Paragraph text. <strong>Bold</strong>, <em>Italic</em>, <a href="#">Link</a></p>
-  </section>
+		<section>
+			<h1>Buttons</h1>
+			<button class="primary active">Primary Active</button>
+			<button class="primary hover">Primary Hover</button>
+		</section>
 
-  <section>
-    <h1>Buttons</h1>
-    <button class="primary active">Primary Active</button>
-    <button class="primary hover">Primary Hover</button>
-  </section>
+		<section>
+			<h1>Forms</h1>
+			<form>
+				<label for="text">Text Input</label>
+				<input type="text" id="text" name="text" /><br />
 
-  <section>
-    <h1>Forms</h1>
-    <form>
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" /><br />
 
-      <label for="text">Text Input</label>
-      <input type="text" id="text" name="text"><br>
+				<label><input type="checkbox" /> Checkbox</label><br />
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email"><br>
+				<label for="textarea">Textarea</label><br />
+				<textarea id="textarea"></textarea><br />
 
-
-      <label><input type="checkbox"> Checkbox</label><br>
-
-      <label for="textarea">Textarea</label><br>
-      <textarea id="textarea"></textarea><br>
-
-      <button type="submit">Submit</button>
-    </form>
-  </section>
-
-</body>
+				<button type="submit">Submit</button>
+			</form>
+		</section>
+	</body>
 </html>
