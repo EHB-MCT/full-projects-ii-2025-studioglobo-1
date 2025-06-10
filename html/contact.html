@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+
+    </nav>
+    <main>
+        <section>
+            <h2>CONTACT</h2>
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="naam">Naam</label>
+                        <input type="text" id="naam" name="naam" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="voornaam">Voornaam</label>
+                        <input type="text" id="voornaam" name="voornaam" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefoon">Telefoon</label>
+                    <input type="tel" id="telefoon" name="telefoon">
+                </div>
+                <div class="form-group">
+                    <label for="onderwerp">Onderwerp</label>
+                    <input type="text" id="onderwerp" name="onderwerp">
+                </div>
+                <div class="form-group">
+                    <label for="bericht">Bericht</label>
+                    <textarea id="bericht" name="bericht" required></textarea>
+                </div>
+                <button type="submit">Verstuur</button>
+            </form>
+        </section>
+        <section>
+            <h2>FAQ</h2>
+            <div class="faq-container">
+    <div class="faq-item">
+      <div class="faq-question">
+        Mogen wij de lokale pers uitnodigen?
+        <span class="faq-icon">&#8594;</span>
+      </div>
+      <div class="faq-answer-wrapper">
+        <div class="faq-answer">
+          Ja, je mag de lokale pers uitnodigen. We raden zelfs aan om dit te doen om je actie zichtbaarder te maken in de lokale gemeenschap!
+        </div>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        Is er een vast tijdstip voor het belmoment?
+        <span class="faq-icon">&#8594;</span>
+      </div>
+      <div class="faq-answer-wrapper">
+        <div class="faq-answer">
+          Nee, er is geen vast tijdstip bepaald. Elke school of klas kan het belmoment organiseren op het moment dat het best uitkomt voor de leerkrachten en de leerlingen.
+        </div>
+      </div>
+    </div>
+  </div>
+
+        </section>
+    </main>
+    <footer>
+		<div>
+			<a href="html/inschrijving.html">Inschrijven</a>
+			<a href="https://studioglobo.be/"><img src="" alt="" /></a>
+			<a href="https://www.diekeure.be/nl/"><img src="" alt="" /></a>
+		</div>
+		<div>
+			<div>
+				<a href="index.html">Home</a>
+				<a href="html/overons.html">Over ons</a>
+				<a href="html/materiaal.html">Lesmateriaal</a>
+				<a href="html/contact.html">Contact</a>
+
+				<p>
+					Saved by the bell <br />
+					is een actie van: <br />
+					STUDIO GLOBO vzw
+				</p>
+			</div>
+			<div>
+				Huidevettersstraat 165, <br />
+				1000 Brussel <br />
+				02 520 05 30 <br />
+				www.studioglobo.be
+				<a href=""></a>
+				<a href=""></a>
+			</div>
+		</div>
+		<h6>© 2025 Studio Globo - website door Ehb Studenten</h6>
+	</footer>
+</body>
+<script>
+    // Accordéon comportement
+    document.querySelectorAll('.faq-question').forEach((question, idx) => {
+      question.addEventListener('click', function() {
+        const item = this.parentElement;
+        // Fermer les autres
+        document.querySelectorAll('.faq-item').forEach((el, i) => {
+          if (el !== item) el.classList.remove('open');
+        });
+        // Toggle celui cliqué
+        item.classList.toggle('open');
+      });
+    });
+  </script>
+</html>
