@@ -104,3 +104,8 @@ label {
 textarea {
 	resize: vertical;
 }
+
+#map {
+    width: 100%;
+    height: 500px;
+}
