@@ -39,7 +39,7 @@ h3 {
 h4 {
 	font-size: 10pt;
 	font-weight: normal;
-	margin-bottom: 50px;
+	margin-bottom: 90px;
 }
 
 h5 {
@@ -53,12 +53,26 @@ h6 {
 }
 
 p {
-	margin-bottom: 5rem;
+	font-size: 10pt;
 }
 
 .rectangle-2,
 .rectangle-3 {
 	display: none;
+}
+
+.rectangle-1 {
+	background-image: url(/images/Rectangle\ 1.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding-bottom: 5%;
+	padding-top: 5%;
+	/* background-position: center center; */
+}
+
+.rectangle-1 h2,
+p {
+	padding: 5%;
 }
 
 strong {
