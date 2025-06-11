@@ -7,7 +7,6 @@
 
     <title>Contact</title>
 </head>
-
 <body>
     <nav>
 
@@ -48,75 +47,60 @@
         <section>
             <h2>FAQ</h2>
             <div class="faq-container">
-    <div class="faq-item">
-      <div class="faq-question">
-        Mogen wij de lokale pers uitnodigen?
-        <span class="faq-icon">&#8594;</span>
-      </div>
-      <div class="faq-answer-wrapper">
-        <div class="faq-answer">
-          Ja, je mag de lokale pers uitnodigen. We raden zelfs aan om dit te doen om je actie zichtbaarder te maken in de lokale gemeenschap!
-        </div>
-      </div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">
-        Is er een vast tijdstip voor het belmoment?
-        <span class="faq-icon">&#8594;</span>
-      </div>
-      <div class="faq-answer-wrapper">
-        <div class="faq-answer">
-          Nee, er is geen vast tijdstip bepaald. Elke school of klas kan het belmoment organiseren op het moment dat het best uitkomt voor de leerkrachten en de leerlingen.
-        </div>
-      </div>
-    </div>
-  </div>
-
+              <div class="faq-item">
+                <div class="faq-question">
+                  Mogen wij de lokale pers uitnodigen?
+                  <span class="faq-icon">&#8594;</span>
+                </div>
+                <div class="faq-answer-wrapper">
+                  <div class="faq-answer">
+                    Ja, je mag de lokale pers uitnodigen. We raden zelfs aan om dit te doen om je actie zichtbaarder te maken in de lokale gemeenschap!
+                  </div>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">
+                  Is er een vast tijdstip voor het belmoment?
+                  <span class="faq-icon">&#8594;</span>
+                </div>
+                <div class="faq-answer-wrapper">
+                  <div class="faq-answer">
+                    Nee, er is geen vast tijdstip bepaald. Elke school of klas kan het belmoment organiseren op het moment dat het best uitkomt voor de leerkrachten en de leerlingen.
+                  </div>
+                </div>
+              </div>
+            </div>
         </section>
     </main>
     <footer>
-		<div>
-			<a href="html/inschrijving.html">Inschrijven</a>
-			<a href="https://studioglobo.be/"><img src="" alt="" /></a>
-			<a href="https://www.diekeure.be/nl/"><img src="" alt="" /></a>
-		</div>
-		<div>
-			<div>
-				<a href="index.html">Home</a>
-				<a href="html/overons.html">Over ons</a>
-				<a href="html/materiaal.html">Lesmateriaal</a>
-				<a href="html/contact.html">Contact</a>
+      <div>
+        <a href="html/inschrijving.html">Inschrijven</a>
+        <a href="https://studioglobo.be/"><img src="" alt="" /></a>
+        <a href="https://www.diekeure.be/nl/"><img src="" alt="" /></a>
+      </div>
+      <div>
+        <div>
+          <a href="../index.html">Home</a>
+          <a href="html/overons.html">Over ons</a>
+          <a href="html/materiaal.html">Lesmateriaal</a>
+          <a href="html/contact.html">Contact</a>
 
-				<p>
-					Saved by the bell <br />
-					is een actie van: <br />
-					STUDIO GLOBO vzw
-				</p>
-			</div>
-			<div>
-				Huidevettersstraat 165, <br />
-				1000 Brussel <br />
-				02 520 05 30 <br />
-				www.studioglobo.be
-				<a href=""></a>
-				<a href=""></a>
-			</div>
-		</div>
-		<h6>© 2025 Studio Globo - website door Ehb Studenten</h6>
+          <p>
+            Saved by the bell <br />
+            is een actie van: <br />
+            STUDIO GLOBO vzw
+          </p>
+        </div>
+        <div>
+          Huidevettersstraat 165, <br />
+          1000 Brussel <br />
+          02 520 05 30 <br />
+          www.studioglobo.be
+          <a href=""></a>
+          <a href=""></a>
+        </div>
+      </div>
+      <h6>© 2025 Studio Globo - website door Ehb Studenten</h6>
 	</footer>
 </body>
-<script>
-    // Accordéon comportement
-    document.querySelectorAll('.faq-question').forEach((question, idx) => {
-      question.addEventListener('click', function() {
-        const item = this.parentElement;
-        // Fermer les autres
-        document.querySelectorAll('.faq-item').forEach((el, i) => {
-          if (el !== item) el.classList.remove('open');
-        });
-        // Toggle celui cliqué
-        item.classList.toggle('open');
-      });
-    });
-  </script>
 </html>
