@@ -7,6 +7,7 @@ body {
 	color: #333;
 	line-height: 1.6;
 	padding: 20px;
+	margin: 3rem;
 }
 /* ----- TYPOGRAPHY ----- */
 h1,
@@ -52,18 +53,23 @@ p {
 
 a {
 	color: #ffa63d;
-    font-size: 20px;
-	text-decoration: underline;
+	font-size: 20px;
 	transition: color 0.3s;
 }
 
-a:hover {
+a:hover,
+.btn:hover {
 	background-color: white;
 	color: #ffa63d;
 }
 
+.btn:hover .icon {
+	content: url("/images/search-hover.svg");
+}
+
 /* ----- BUTTONS ----- */
-.button , .btn{
+.button,
+.btn {
 	font-size: 16pt;
 	color: white;
 	transition: all 0.3s ease;
@@ -76,12 +82,14 @@ a:hover {
 	border: 2px solid;
 }
 
-.button:active , .btn:active {
+.button:active,
+.btn:active {
 	transform: translateY(4px);
 	top: 4px;
 }
 
-.button.hover , .btn.hover{
+.button.hover,
+.btn.hover {
 	background-color: red;
 }
 
@@ -89,26 +97,33 @@ a:hover {
 input,
 select,
 textarea {
-	width: 100%;
-	padding: 5px;
-	margin-bottom: 10px;
+	width: 88%;
+	padding: 1rem;
+	margin-bottom: 3rem;
+	text-align: center;
 	border: 3px solid #fea033;
-	border-radius: 10px;
 	background-color: white;
-	font-size: 16px;
-}
-
-label {
-	display: block;
-	margin-bottom: 10px;
-	font-weight: 500;
-}
-
-textarea {
-	resize: vertical;
+	font-size: 16pt;
 }
 
 #map {
-	width: 100%;
-	height: 500px;
+	width: 53.1rem;
+	height: 50rem;
+	border-radius: 12px;
+}
+
+.search-bar {
+	border-radius: 12px 0 0 12px;
+}
+
+.btn {
+	font-size: 16pt;
+	color: white;
+	transition: all 0.3s ease;
+	background-color: #ffa63d;
+	border-radius: 0px 12px 12px 0px;
+	padding: 0.47rem 1rem;
+	position: absolute;
+	border: 2px solid;
+	border-color: #ffa63d;
 }
