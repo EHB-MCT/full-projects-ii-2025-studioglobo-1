@@ -71,27 +71,21 @@ a:hover,
 /* ----- BUTTONS ----- */
 .button,
 .btn {
-	font-size: 16pt;
+	font-size: 12pt;
 	color: white;
 	transition: all 0.3s ease;
 	background-color: #ffa63d;
 	border-radius: 12px;
-	padding: 10px 30px;
+	padding: 1rem 5rem;
 	font-weight: bold;
 	position: relative;
 	text-decoration: none;
 	border: 2px solid;
 }
 
-.button:active,
-.btn:active {
+.button:active {
 	transform: translateY(4px);
 	top: 4px;
-}
-
-.button.hover,
-.btn.hover {
-	background-color: red;
 }
 
 /* ----- FORMS ----- */
@@ -104,7 +98,7 @@ textarea {
 	text-align: center;
 	border: 3px solid #fea033;
 	background-color: white;
-	font-size: 16pt;
+	font-size: 26pt;
 }
 
 #map {
@@ -118,13 +112,8 @@ textarea {
 }
 
 .btn {
-	font-size: 16pt;
-	color: white;
-	transition: all 0.3s ease;
-	background-color: #ffa63d;
 	border-radius: 0px 12px 12px 0px;
-	padding: 0.47rem 1rem;
+	padding: 0.95rem 1rem;
 	position: absolute;
-	border: 2px solid;
 	border-color: #ffa63d;
 }
