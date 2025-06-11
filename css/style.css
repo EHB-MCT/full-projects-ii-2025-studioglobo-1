@@ -65,14 +65,15 @@ p {
 	background-image: url(/images/Rectangle\ 1.svg);
 	background-repeat: no-repeat;
 	background-size: 100%;
-	padding-bottom: 5%;
-	padding-top: 5%;
 	/* background-position: center center; */
 }
 
-.rectangle-1 h2,
-p {
-	padding: 5%;
+.rectangle-1 h2 {
+	padding-top: 8%;
+}
+
+.rectangle-1 p {
+	padding-bottom: 6%;
 }
 
 strong {
