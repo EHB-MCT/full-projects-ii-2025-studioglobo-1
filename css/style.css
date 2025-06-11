@@ -20,40 +20,36 @@ h3 {
 }
 
 h1 {
-	font-size: 70pt;
-	font-weight: 800;
-	line-height: 7.5rem;
+	font-size: 6rem;
+	font-weight: 700;
+	line-height: 6.5rem;
 }
 
 h2 {
-	font-size: 40pt;
+	font-size: 4.2rem;
 	font-weight: 700;
 	margin-top: 200px;
 }
 
 h3 {
-	font-size: 20pt;
+	font-size: 1.25rem;
 	font-weight: 600;
 }
 
 h4 {
-	font-size: 10pt;
+	font-size: 0.83rem;
 	font-weight: normal;
 	margin-bottom: 90px;
 }
 
-h5 {
-	font-size: 20pt;
-	font-weight: 600;
-}
-
+h5,
 h6 {
-	font-size: 20pt;
+	font-size: 1.25rem;
 	font-weight: 600;
 }
 
 p {
-	font-size: 10pt;
+	font-size: 2.5rem;
 }
 
 .rectangle-2,
@@ -64,12 +60,14 @@ p {
 .rectangle-1 {
 	background-image: url(/images/Rectangle\ 1.svg);
 	background-repeat: no-repeat;
-	background-size: 100%;
-	/* background-position: center center; */
+	background-size: contain;
+	background-position: center center;
+	height: 100%;
+	width: 100%;
 }
 
 .rectangle-1 h2 {
-	padding-top: 8%;
+	padding-top: 10%;
 }
 
 .rectangle-1 p {
