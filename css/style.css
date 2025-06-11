@@ -34,7 +34,7 @@ h3 {
 }
 
 h4 {
-	font-size: 20pt;
+	font-size: 16pt;
 	font-weight: 600;
 }
 
@@ -69,7 +69,8 @@ a:hover,
 }
 
 /* ----- BUTTONS ----- */
-.button {
+.button,
+.btn {
 	font-size: 16pt;
 	color: white;
 	transition: all 0.3s ease;
@@ -83,9 +84,14 @@ a:hover,
 }
 
 .button:active,
-.button:active {
+.btn:active {
 	transform: translateY(4px);
 	top: 4px;
+}
+
+.button.hover,
+.btn.hover {
+	background-color: red;
 }
 
 /* ----- FORMS ----- */
