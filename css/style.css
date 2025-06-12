@@ -288,6 +288,10 @@ body.no-scroll {
 	width: 100%;
 }
 
+.button-rectangle {
+	margin: 100px 0 200px 0;
+}
+
 /* .info {
 	display: flex;
 	align-items: center;
