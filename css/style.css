@@ -6,7 +6,6 @@ body {
 	background-color: #fffdf8;
 	color: #333;
 	line-height: 1.6;
-
 	margin-inline: 5%;
 	text-align: center;
 	overflow-x: hidden;
@@ -20,9 +19,7 @@ h3 {
 	margin-bottom: 2rem;
 }
 
-header 
-
-h1 {
+header h1 {
 	font-size: 2.8rem;
 	font-weight: 700;
 	line-height: 3.3rem;
@@ -128,6 +125,7 @@ a:hover,
 	position: relative;
 	text-decoration: none;
 	border: 2px solid;
+	border-color: #ffa63d;
 }
 
 .button-bell {
@@ -176,6 +174,8 @@ textarea {
 	padding-right: 5rem;
 }
 
+
+
 @media (min-width: 768px) {
 	h1 {
 		font-size: 4rem;
@@ -218,7 +218,6 @@ textarea {
 	#map {
 		height: 40rem;
 	}
-	
 }
 
 /* Hamburger Menu made by Treehouse
@@ -297,4 +296,9 @@ nav {
 
 body.no-scroll {
 	overflow: hidden;
+}
+
+.logo-menu {
+	width: 3.5rem;
+	margin-bottom: 1rem;
 }
