@@ -74,7 +74,7 @@ p {
 /* ----- LINKS ----- */
 a {
 	color: black;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	transition: color 0.3s;
 	text-decoration: none;
 }
@@ -115,12 +115,12 @@ a:hover,
 .button,
 .btn,
 .button-bell {
-	font-size: 1rem;
+	font-size: 1.5rem;
 	color: white;
 	transition: all 0.3s ease;
 	background-color: #ffa63d;
 	border-radius: 15px;
-	padding: 0.8rem 2rem;
+	padding: 0.8rem 5rem;
 	font-weight: bold;
 	position: relative;
 	text-decoration: none;
