@@ -1,0 +1,43 @@
+footer {
+  background: #B8EBCD;
+  padding: 1.5rem 1rem 1rem 1rem;
+  margin: auto;
+  margin-top: 50px;
+}
+
+footer a {
+    font-size: 0.8rem;
+}
+
+.adresse {
+    text-align: end;
+}
+
+.test {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.sbtb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.copyright {
+    text-align: center;
+}

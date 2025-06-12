@@ -3,6 +3,7 @@
 <head>
 	<link href="css/reset.css" rel="stylesheet" />
 	<link href="css/style.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/footer.css">
 	<link
 		rel="stylesheet"
 		href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -141,36 +142,42 @@
 			</div>
 		</section>
 	</main>
-	<footer>
-		<div>
-			<a href="html/inschrijving.html">Inschrijven</a>
-			<a href="https://studioglobo.be/"><img src="" alt="" /></a>
-			<a href="https://www.diekeure.be/nl/"><img src="" alt="" /></a>
-		</div>
-		<div>
-			<div>
-				<a href="index.html">Home</a>
-				<a href="html/overons.html">Over ons</a>
-				<a href="html/materiaal.html">Lesmateriaal</a>
-				<a href="html/contact.html">Contact</a>
+	<footer class="footer">
+        <div class="test">
+            <div class="footer-menu">
+                <div><a href="">Home</a></div>
+                <div><a href="">Over ons</a></div>
+                <div><a href="">Lesmateriaal</a></div>
+                <div><a href="">Contact</a></div>
+            </div>
 
-				<p>
-					Saved by the bell <br />
-					is een actie van: <br />
-					STUDIO GLOBO vzw
-				</p>
-			</div>
-			<div>
-				Huidevettersstraat 165, <br />
-				1000 Brussel <br />
-				02 520 05 30 <br />
-				www.studioglobo.be
-				<a href=""></a>
-				<a href=""></a>
-			</div>
-		</div>
-		<h6>© 2025 Studio Globo - website door Ehb Studenten</h6>
-	</footer>
+            <div class="adresse">
+                <div>Huidevettersstraat 165</div>
+                <div>1000 Brussel</div>
+                <div>02 520 05 30</div>
+                <div>www.studioglobo.be</div>
+            </div>
+    </div>
+    <div class="sbtb">
+    <div><h6>Saved by the bell<br>is een actie van:</div>
+        <div><img src="images/studio logo.svg" alt="Studio Globo" class="footer-logo"></div>
+        <div><img src="images/de keure.svg" alt="de Keure" class="footer-logo"></div>
+    </div>
+
+  <div class="footer-icon">
+    
+    <div class="disclaim">
+        <a href="">Disclaimer</a><br>
+        <a href="">Privacyverklaring</a>
+    </div>
+    <div class="socials">
+      <div><a href="#"><img src="images/youtube.svg" alt="YouTube"></a></div>
+      <div><a href="#"><img src="images/facebook.svg" alt="Facebook"></a></div>
+    </div>
+  </div>
+
+  <h6 class="copyright">© 2025 Studio Globo – website door EhB Studenten</h6>
+</footer>
 
 	<script src="js/index.js"></script>
 	<script type="module" src="js/map.js" defer></script>
