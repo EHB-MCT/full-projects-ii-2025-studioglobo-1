@@ -34,18 +34,18 @@ h2 {
 h3 {
 	font-size: 1.1rem;
 	font-weight: 600;
+	margin: 0;
 }
 
 h4 {
-	font-size: 1.2rem;
+	font-size: 1rem;
 	font-weight: normal;
 	margin-bottom: 2.5rem;
 }
 
 p {
-	font-size: 1.1rem;
-	line-height: 1.8rem;
-	margin-bottom: 1.5rem;
+	font-size: 1rem;
+	line-height: 1.4rem;
 }
 
 /* ----- RECTANGLES ----- */
@@ -231,9 +231,9 @@ textarea {
 }
 
 @media (min-width: 1024px) {
-	body {
+	/* body {
 		display: none;
-	}
+	} */
 }
 
 /* Hamburger Menu made by Treehouse
@@ -317,6 +317,64 @@ body.no-scroll {
 .logo-menu {
 	width: 3.5rem;
 	margin-bottom: 1rem;
+}
+
+.info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.rectangle.a {
+	padding: 5%;
+	background-image: url(/images/Rectangle\ 4.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-bottom: 30px;
+	width: 500px;
+	flex: 1;
+}
+
+.rectangle.b {
+	padding: 5%;
+	background-image: url(/images/Rectangle\ 5.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-bottom: 30px;
+	width: 500px;
+	flex: 1;
+}
+
+.rectangle.c {
+	padding: 5%;
+	background-image: url(/images/Rectangle\ 6.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-bottom: 30px;
+	width: 500px;
+	flex: 1;
+}
+
+.row {
+	display: flex;
+	gap: 20px;
+}
+
+.rectangle img {
+	justify-content: center;
+	align-items: center;
+  	flex: 1;
+}
+
+.rectangle h3 {
+	align-items: center;
+	text-align: left;
+  	flex: 6;
+}
+
+.rectangle p {
+	text-align: left;
 }
 
 /* .card-title {
