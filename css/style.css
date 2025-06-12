@@ -154,7 +154,7 @@ textarea {
 
 #map {
 	width: 100%;
-	height: 30rem;
+	height: 20rem;
 	border-radius: 12px;
 }
 
@@ -182,7 +182,7 @@ textarea {
 }
 
 .home-image img {
-	max-width: 120%;
+	max-width: 110%;
 	width: auto;
 	height: auto;
 }
@@ -319,3 +319,28 @@ body.no-scroll {
 	width: 3.5rem;
 	margin-bottom: 1rem;
 }
+
+/* .card-title {
+	justify-content: flex-start;
+	display: inline-flex;
+}
+
+.rectangle-4 {
+	background-image: url(/images/Rectangle\ 4.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+	height: 100%;
+	width: 100%;
+}
+
+.rectangle-4 h3 {
+	padding-top: 10%;
+	text-align: left;
+}
+
+.rectangle-4 p {
+	padding-top: -10%;
+	text-align: left;
+	font-size: 1rem;
+} */
