@@ -32,9 +32,7 @@ h2 {
 }
 
 h3 {
-	font-size: 1.1rem;
 	font-weight: 600;
-	margin: 0;
 }
 
 h4 {
@@ -44,7 +42,7 @@ h4 {
 }
 
 p {
-	font-size: 1rem;
+	font-size: 1.1rem;
 	line-height: 1.4rem;
 }
 
@@ -106,7 +104,8 @@ a:hover,
 	color: #ffa63d;
 }
 
-.btn:hover {
+.btn:hover,
+.button:hover {
 	background-color: white;
 }
 
@@ -187,56 +186,6 @@ textarea {
 	max-width: 110%;
 	width: auto;
 	height: auto;
-}
-
-@media (min-width: 768px) {
-	h1 {
-		font-size: 4rem;
-	}
-
-	h2 {
-		font-size: 2.8rem;
-	}
-
-	h3 {
-		font-size: 1.2rem;
-	}
-
-	h4 {
-		font-size: 1.5rem;
-	}
-
-	p {
-		font-size: 1.3rem;
-	}
-
-	.button,
-	.btn {
-		font-size: 1.2rem;
-		padding: 0.36rem 1.6rem;
-	}
-
-	.button-bell {
-		padding: 1.3rem 6rem;
-		font-size: 1.5rem;
-	}
-
-	input,
-	select,
-	textarea {
-		font-size: 1.2rem;
-		padding: 1rem;
-	}
-
-	#map {
-		height: 40rem;
-	}
-}
-
-@media (min-width: 1024px) {
-	/* body {
-		display: none;
-	} */
 }
 
 /* Hamburger Menu made by Treehouse
@@ -322,41 +271,39 @@ body.no-scroll {
 	margin-bottom: 1rem;
 }
 
-.info {
+/* INFO */
+
+
+
+/* .info {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
 	flex-wrap: wrap;
 }
 
-.rectangle.a {
+.rectangle1 {
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-bottom: 30px;
+	width: 500px;
+	flex: 1;
+}
+
+.rectangle1.a {
 	padding: 5%;
 	background-image: url(/images/Rectangle\ 4.svg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	margin-bottom: 30px;
-	width: 500px;
-	flex: 1;
 }
 
-.rectangle.b {
+.rectangle1.b {
 	padding: 5%;
 	background-image: url(/images/Rectangle\ 5.svg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	margin-bottom: 30px;
-	width: 500px;
-	flex: 1;
 }
 
-.rectangle.c {
+.rectangle1.c {
 	padding: 5%;
 	background-image: url(/images/Rectangle\ 6.svg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	margin-bottom: 30px;
-	width: 500px;
-	flex: 1;
 }
 
 .row {
@@ -364,43 +311,109 @@ body.no-scroll {
 	gap: 20px;
 }
 
-.rectangle img {
+.rectangle1 img {
 	justify-content: center;
 	align-items: center;
-  	flex: 1;
+	flex: 1;
 }
 
-.rectangle h3 {
+.rectangle1 h3 {
 	align-items: center;
+	font-size: 1.5rem;
 	text-align: left;
-  	flex: 6;
+	flex: 6;
 }
 
-.rectangle p {
+.rectangle1 p {
 	text-align: left;
-}
-
-/* .card-title {
-	justify-content: flex-start;
-	display: inline-flex;
-}
-
-.rectangle-4 {
-	background-image: url(/images/Rectangle\ 4.svg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center center;
-	height: 100%;
-	width: 100%;
-}
-
-.rectangle-4 h3 {
-	padding-top: 10%;
-	text-align: left;
-}
-
-.rectangle-4 p {
-	padding-top: -10%;
-	text-align: left;
-	font-size: 1rem;
+	font-size: 0.9rem;
 } */
+
+@media (min-width: 768px) {
+	h1 {
+		font-size: 4rem;
+	}
+
+	h2 {
+		font-size: 2.8rem;
+	}
+
+	h3 {
+		font-size: 1.2rem;
+	}
+
+	h4 {
+		font-size: 1.5rem;
+	}
+
+	p {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+
+	.button,
+	.btn {
+		font-size: 1.2rem;
+		padding: 0.8rem 5rem;
+	}
+
+	.btn {
+		font-size: 1.2rem;
+		padding: 0.35rem 2rem;
+	}
+
+	.button-bell {
+		padding: 1.3rem 6rem;
+		font-size: 1.5rem;
+	}
+
+	input,
+	select,
+	textarea {
+		font-size: 1.2rem;
+		padding: 1rem;
+	}
+
+	#map {
+		height: 40rem;
+	}
+
+	.info {
+		flex-direction: none;
+	}
+
+	/* .rectangle1 p {
+		font-size: 1.2rem;
+	} */
+}
+
+@media (min-width: 1024px) {
+	/* body {
+		display: none;
+	} */
+
+	.off-screen-menu {
+		background-color: transparent;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		position: absolute;
+		right: -100%;
+		display: block;
+		flex-direction: column;
+		justify-content: flex-end;
+		font-size: 30pt;
+		z-index: 2;
+	}
+
+	.off-screen-menu ul {
+		display: flex;
+		gap: 2rem;
+		justify-content: flex-end;
+		align-items: flex-start;
+	}
+
+	.ham-menu {
+		display: none;
+	}
+}
