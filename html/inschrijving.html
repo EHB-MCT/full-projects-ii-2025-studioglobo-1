@@ -18,7 +18,79 @@
 		</div>
     </nav>
     <main>
+      <body>
+  <h1>Inschrijving voor Saved by the Bell</h1>
+  <form id="inschrijving">
+    <!-- Stap 1: Schoolgegevens -->
+    <div class="step active" id="step1">
+      <h2>1. Schoolgegevens</h2>
+      <div>
+        <label>Naam van de school:</label>
+        <input type="text" name="schoolNaam" required>
+      </div>
+      <div>
+        <label>Straat + nummer:</label>
+        <input type="text" name="straat" required>
+      </div>
+      <div class="form-row">
+        <div>
+          <label>Postcode:</label>
+          <input type="text" name="postcode" required>
+        </div>
+      </div>
+      <div>
+        <label>Gemeente:</label>
+        <input type="text" name="gemeente" required>
+      </div>
+        <h4>Onderwijsniveau:</h4>
+      <div>
+        <label for="kleuter">Kleuteronderwijs</label>
+        <input type="checkbox" name="kleuter" id="kleuter">
+      </div>
+      <div>
+        <label for="lager">Lager onderwijs</label>
+        <input type="checkbox" name="lager" id="lager">
+      </div>
+      <div>
+        <label for="secundair">Secundair onderwijs</label>
+        <input type="checkbox" name="secundair" id="secundair">
+      </div>
+      <div>
+        <label for="hoger">Hoger onderwijs</label>
+        <input type="checkbox" name="hoger" id="hoger">
+      </div>
+    </div>
 
+    <!-- Stap 2: Contactpersoon -->
+    <div class="step" id="step2">
+      <h2>2. Contactpersoon</h2>
+      <label>Naam:</label>
+      <input type="text" name="contactNaam" required>
+      <label>E-mailadres:</label>
+      <input type="email" name="email" required>
+      <label>Telefoonnummer (optioneel):</label>
+      <input type="text" name="telefoon">
+    </div>
+
+    <!-- Stap 3: Deelname & toestemming -->
+    <div class="step" id="step3">
+      <h2>3. Deelname & Toestemming</h2>
+      <label>Gaan jullie mee bellen op 3 oktober?</label><br>
+      <input type="radio" name="deelnemen" value="ja" required> Ja<br>
+      <input type="radio" name="deelnemen" value="nee"> Nee<br><br>
+      <label>Korte boodschap op de kaart (optioneel):</label>
+      <textarea name="boodschap" rows="3"></textarea>
+      <input type="checkbox" name="toonKaart"> Toon mijn school op de kaart<br>
+      <input type="checkbox" name="toestemming" required> Ik ga akkoord met de privacyvoorwaarden
+    </div>
+
+    
+    <div class="navigation">
+      <button class="button" type="button" id="backBtn" onclick="changeStep(-1)">Vorige</button>
+      <button class="button" type="button" id="nextBtn" onclick="changeStep(1)">Volgende</button>
+      <button class="button" type="submit" id="submitBtn" style="display:none;">Inschrijven</button>
+    </div>
+  </form>
     </main>
     <footer>
       <div>
