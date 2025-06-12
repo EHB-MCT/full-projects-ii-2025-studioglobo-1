@@ -173,18 +173,6 @@ textarea {
 	padding-right: 5rem;
 }
 
-.inschrijving {
-	width: 80%;
-}
-
-label {
-	text-align: left;
-    font-size: 1rem;
-    margin-bottom: 8px;
-    display: block;
-    font-weight: 500;
-}
-
 @media (min-width: 768px) {
 	h1 {
 		font-size: 4rem;
