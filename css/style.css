@@ -174,7 +174,18 @@ textarea {
 	padding-right: 5rem;
 }
 
+.home-image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-left: 5rem;
+}
 
+.home-image img {
+	max-width: 120%;
+	width: auto;
+	height: auto;
+}
 
 @media (min-width: 768px) {
 	h1 {
