@@ -133,7 +133,6 @@ a:hover,
 	transition: all 0.3s ease;
 	background-color: #ffa63d;
 	border-radius: 15px;
-	margin: 5px;
 	padding: 0.8rem 5rem;
 	font-weight: bold;
 	position: relative;
@@ -362,7 +361,25 @@ body {
 	background-image: url("../images/Lines\ -\ Home\ Mobile\ V2.svg");
 	background-repeat: no-repeat;
 	background-position: top center;
-	background-size: 100% 94%;
+	background-size: 100% 93%;
+}
+
+@media (min-width: 500px) {
+	body {
+		background-size: 100% 95%;
+	}
+}
+
+@media (min-width: 550px) {
+	body {
+		background-size: 100% 96%;
+	}
+}
+
+@media (min-width: 60px) {
+	body {
+		background-size: 100% 97%;
+	}
 }
 
 @media (min-width: 768px) {
@@ -418,15 +435,18 @@ body {
 		flex-direction: none;
 	}
 
+	body {
+		background-size: 100% 99%;
+	}
 	/* .rectangle1 p {
 		font-size: 1.2rem;
 	} */
 }
 
 @media (min-width: 1024px) {
-	/* body {
+	body {
 		display: none;
-	} */
+	}
 
 	.off-screen-menu {
 		background-color: transparent;
