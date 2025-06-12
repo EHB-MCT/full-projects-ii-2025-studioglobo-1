@@ -133,6 +133,7 @@ a:hover,
 	transition: all 0.3s ease;
 	background-color: #ffa63d;
 	border-radius: 15px;
+	margin: 5px;
 	padding: 0.8rem 5rem;
 	font-weight: bold;
 	position: relative;
