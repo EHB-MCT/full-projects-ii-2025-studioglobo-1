@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/contact.css" rel="stylesheet" />
     <title>Document</title>
 </head>
 <body>
@@ -18,7 +19,78 @@
 		</div>
     </nav>
     <main>
+      <body>
+  <h1>INSCHRIJVING VOOR SAVED BY THE BELL </h1>
+  <form id="inschrijfformulier">
+    <!-- Stap 1: Schoolgegevens -->
+    <div class="step active" id="step1">
+      <h3>1. Schoolgegevens</h3>
+      <div>
+        <label for="school">Naam van de school</label>
+        <input type="text" name="school" required>
+      </div>
+      <div>
+        <label for="straat">Straat + nummer</label>
+        <input type="text" name="straat" required>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="postcode">Postcode</label>
+          <input type="text" name="postcode" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="gemeente">Gemeente</label>
+          <input type="text" name="gemeente" required>
+        </div>
+      </div>
+        <h4>Onderwijsniveau</h4>
+      <div>
+        <label for="kleuter">Kleuteronderwijs</label>
+        <input type="checkbox" name="kleuter" id="kleuter">
+      </div>
+      <div>
+        <label for="lager">Lager onderwijs</label>
+        <input type="checkbox" name="lager" id="lager">
+      </div>
+      <div>
+        <label for="secundair">Secundair onderwijs</label>
+        <input type="checkbox" name="secundair" id="secundair">
+      </div>
+      <div>
+        <label for="hoger">Hoger onderwijs</label>
+        <input type="checkbox" name="hoger" id="hoger">
+      </div>
+    </div>
 
+    <!-- Stap 2: Contactpersoon -->
+    <div class="step" id="step2">
+      <h3>2. Contactpersoon</h3>
+      <label for="Naam">Naam</label>
+      <input type="text" name="Naam" required>
+      <label for="">Voornaam</label>
+      <input type="text" name="Voornaam" required>
+      <label for="Email">E-mailadres</label>
+      <input type="email" name="Email" required>
+      <label for="telefoon">Telefoonnummer (optioneel)</label>
+      <input type="tel" name="telefoon">
+    </div>
+
+    <!-- Stap 3: Deelname & toestemming -->
+    <div class="step" id="step3">
+      <h3>3. Deelname & Toestemming</h3>
+      <label>Korte boodschap op de kaart (optioneel):</label>
+      <textarea name="boodschap" rows="3"></textarea>!&(ézrt'(§))
+      <input type="checkbox" name="toestemming" required> Ik ga akkoord met de privacyvoorwaarden
+    </div>
+
+    
+    <div class="navigation">
+      <button class="button" type="button" id="backBtn" onclick="changeStep(-1)">Vorige</button>
+      <button class="button" type="button" id="nextBtn" onclick="changeStep(1)">Volgende</button>
+      <button class="button" type="submit" id="submitBtn" style="display:none;">Inschrijven</button>
+    </div>
+  </form>
     </main>
     <footer>
       <div>
