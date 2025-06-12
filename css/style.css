@@ -6,9 +6,10 @@ body {
 	background-color: #fffdf8;
 	color: #333;
 	line-height: 1.6;
-	padding: 20px;
-	margin: 5%;
+
+	margin-inline: 5%;
 	text-align: center;
+	overflow-x: hidden;
 }
 
 /* ----- TYPOGRAPHY ----- */
@@ -77,6 +78,28 @@ a {
 	font-size: 1rem;
 	transition: color 0.3s;
 	text-decoration: none;
+}
+
+.nav-hover {
+	position: relative;
+	display: inline-block;
+}
+
+.nav-hover::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%) scaleX(0);
+	transform-origin: center;
+	width: 100%;
+	height: 2px;
+	background-color: #ffa63d;
+	transition: transform 0.4s ease;
+}
+
+.nav-hover:hover::after {
+	transform: translateX(-50%) scaleX(1);
 }
 
 a:hover,
@@ -193,4 +216,82 @@ textarea {
 	#map {
 		height: 40rem;
 	}
+}
+
+/* Hamburger Menu made by Treehouse
+	Link naar zijn video: https://www.youtube.com/watch?v=aNDqzlAKmZc
+	Aangepast door Hamza El Aisati*/
+
+.off-screen-menu ul li {
+	display: block;
+	margin: 10px;
+}
+
+.off-screen-menu {
+	background-color: #fffdf8;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	right: -50rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 30pt;
+	transition: 0.5s ease;
+	z-index: 1;
+}
+
+.off-screen-menu.active {
+	right: 0;
+}
+
+nav {
+	padding: 1rem;
+	display: flex;
+}
+
+.ham-menu {
+	height: 50px;
+	width: 50px;
+	margin-left: auto;
+	position: relative;
+	z-index: 1;
+}
+
+.ham-menu span {
+	height: 3px;
+	width: 60px;
+	background-color: black;
+	border-radius: 25px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: 0.5s ease;
+}
+
+.ham-menu span:nth-child(1) {
+	top: 25%;
+}
+
+.ham-menu span:nth-child(2) {
+	top: 75%;
+}
+
+.ham-menu.active span:nth-child(2) {
+	top: 50%;
+	transform: translate(-50%, 0%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(3) {
+	opacity: 0;
+}
+
+.ham-menu.active span:nth-child(1) {
+	top: 50%;
+	transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+body.no-scroll {
+	overflow: hidden;
 }

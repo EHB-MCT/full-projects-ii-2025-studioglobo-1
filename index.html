@@ -12,14 +12,22 @@
 </head>
 
 <body>
-	<nav>
+	<nav class="navbar">
 		<img src="" alt="" />
-		<div>
-			<a href="index.html">Home</a>
-			<a href="html/overons.html">Over ons</a>
-			<a href="html/materiaal.html">Lesmateriaal</a>
-			<a href="html/contact.html">Contact</a>
-			<a href="html/inschrijving.html" class="button">Inschrijven</a>
+		<div class="off-screen-menu">
+			<ul>
+				<li><a href="index.html" class="nav-hover">Home</a></li>
+				<li>
+					<a href="html/overons.html" class="nav-hover">Over ons</a>
+				</li>
+				<li>
+					<a href="html/materiaal.html" class="nav-hover">Lesmateriaal</a>
+				</li>
+				<li><a href="html/contact.html" class="nav-hover">Contact</a></li>
+				<li>
+					<a href="html/inschrijving.html" class="button">Inschrijven</a>
+				</li>
+			</ul>
 		</div>
 		<div class="ham-menu">
 			<span></span>
@@ -66,7 +74,11 @@
 		<section>
 			<h2>Bekijk alle deelnemende scholen</h2>
 			<div class="search-container">
-				<input type="text" placeholder="Zoek gebelde scholen..." class="search-bar"/>
+				<input
+					type="text"
+					placeholder="Zoek gebelde scholen..."
+					class="search-bar"
+				/>
 				<button class="btn">
 					<img src="/images/search.svg" class="icon" />
 				</button>
@@ -76,11 +88,17 @@
 		<section>
 			<h2>INFO</h2>
 			<div class="card-flex">
-				<img src="images/lesmateriaal.png" alt="Lesmateriaal" class="card-img">
+				<img
+					src="images/lesmateriaal.png"
+					alt="Lesmateriaal"
+					class="card-img"
+				/>
 				<div class="card-content">
-					<h3>Ontdek het lesmateriaal<br>vanaf 10 september!</h3>
+					<h3>Ontdek het lesmateriaal<br />vanaf 10 september!</h3>
 					<p>
-					Kijk je er al naar uit om met jouw leerlingen te werken rond Saved by the bell? Dit jaar zetten wij 'de weg naar school' in de kijker. Lees verder
+						Kijk je er al naar uit om met jouw leerlingen te werken rond Saved
+						by the bell? Dit jaar zetten wij 'de weg naar school' in de kijker.
+						Lees verder
 					</p>
 				</div>
 			</div>
@@ -140,4 +158,5 @@
 		integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
 		crossorigin=""
 	></script>
+	<script src="js/Hamburger.js"></script>
 </body>
