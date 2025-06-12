@@ -231,6 +231,12 @@ textarea {
 	}
 }
 
+@media (min-width: 1024px) {
+	body {
+		display: none;
+	}
+}
+
 /* Hamburger Menu made by Treehouse
 	Link naar zijn video: https://www.youtube.com/watch?v=aNDqzlAKmZc
 	Aangepast door Hamza El Aisati*/
@@ -245,7 +251,7 @@ textarea {
 	height: 100%;
 	width: 100%;
 	position: fixed;
-	right: -50rem;
+	right: -100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
