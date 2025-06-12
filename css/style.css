@@ -10,7 +10,8 @@ body {
 	overflow-x: hidden;
 }
 
-header, main {
+header,
+main {
 	margin-inline: 5%;
 }
 
@@ -50,11 +51,18 @@ p {
 }
 
 /* ----- RECTANGLES ----- */
+
+.rectangle-carousel img {
+	width: 80%;
+	padding-top: 10px;
+}
+
 .rectangle-2,
 .rectangle-3 {
 	display: none;
 }
 
+/* 
 .rectangle-1 {
 	background-image: url(/images/Rectangle\ 1.svg);
 	background-repeat: no-repeat;
@@ -70,7 +78,7 @@ p {
 
 .rectangle-1 p {
 	padding-bottom: 6%;
-}
+} */
 
 /* ----- LINKS ----- */
 a {
@@ -283,7 +291,13 @@ form {
 
 /* INFO */
 
+.info img {
+	width: 100%;
+}
 
+.button-rectangle {
+	margin: 100px 0 200px 0;
+}
 
 /* .info {
 	display: flex;
