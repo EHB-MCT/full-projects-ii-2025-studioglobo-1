@@ -103,8 +103,11 @@ a {
 
 a:hover,
 .btn:hover {
-	background-color: white;
 	color: #ffa63d;
+}
+
+.btn:hover {
+	background-color: white;
 }
 
 .btn:hover .icon {
