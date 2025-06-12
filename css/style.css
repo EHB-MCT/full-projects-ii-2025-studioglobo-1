@@ -10,7 +10,8 @@ body {
 	overflow-x: hidden;
 }
 
-header, main {
+header,
+main {
 	margin-inline: 5%;
 }
 
@@ -50,7 +51,13 @@ p {
 }
 
 /* ----- RECTANGLES ----- */
-.rectangle-2,
+
+.rectangle-carousel img {
+	width: 80%;
+	padding-top: 10px;
+}
+
+/* .rectangle-2,
 .rectangle-3 {
 	display: none;
 }
@@ -70,7 +77,7 @@ p {
 
 .rectangle-1 p {
 	padding-bottom: 6%;
-}
+} */
 
 /* ----- LINKS ----- */
 a {
@@ -276,7 +283,9 @@ body.no-scroll {
 
 /* INFO */
 
-
+.info img {
+	width: 100%;
+}
 
 /* .info {
 	display: flex;
