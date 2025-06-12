@@ -274,6 +274,13 @@ body.no-scroll {
 	margin-bottom: 1rem;
 }
 
+form {
+      max-width: 600px;
+      margin: auto;
+      padding: 24px 32px 32px 32px;
+      border-radius: 10px;
+    }
+
 /* INFO */
 
 
