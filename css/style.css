@@ -6,9 +6,12 @@ body {
 	background-color: #fffdf8;
 	color: #333;
 	line-height: 1.6;
-	margin-inline: 5%;
 	text-align: center;
 	overflow-x: hidden;
+}
+
+header, main {
+	margin-inline: 5%;
 }
 
 /* ----- TYPOGRAPHY ----- */

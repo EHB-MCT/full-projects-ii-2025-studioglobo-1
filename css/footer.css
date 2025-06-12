@@ -1,12 +1,13 @@
 footer {
   background: #B8EBCD;
   padding: 1.5rem 1rem 1rem 1rem;
-  margin: auto;
   margin-top: 50px;
+  text-align: left;
 }
 
 footer a {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 .adresse {
@@ -16,7 +17,6 @@ footer a {
 .test {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex: 1;
     margin-bottom: 20px;
 }
@@ -24,12 +24,13 @@ footer a {
 .sbtb {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-bottom: 20px;
 }
 
 .footer-icon {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .socials {
