@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/contact.css" rel="stylesheet" />
+    <link href="../css/inschrijving.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+		<a href="../index.html">
+			<img src="../images/logo.png" alt="Logo" class="logo-menu"
+		/></a>
+		<div class="off-screen-menu">
+			<ul>
+				<li><a href="../index.html" class="nav-hover">Home</a></li>
+				<li>
+					<a href="overons.html" class="nav-hover">Over ons</a>
+				</li>
+				<li>
+					<a href="materiaal.html" class="nav-hover">Lesmateriaal</a>
+				</li>
+				<li><a href="contact.html" class="nav-hover">Contact</a></li>
+				<li>
+					<a href="inschrijving.html" class="button">Inschrijven</a>
+				</li>
+			</ul>
+		</div>
+		<div class="ham-menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</nav>
+    <main>
+      <body>
+  <h2>INSCHRIJVING VOOR SAVED BY THE BELL </h2>
+  <form id="inschrijfformulier">
+    <!-- Stap 1: Schoolgegevens -->
+    <div class="step active" id="step1">
+      <h3>1. Schoolgegevens</h3>
+      <div>
+        <label for="school">Naam van de school</label>
+        <input type="text" name="school" required>
+      </div>
+      <div>
+        <label for="straat">Straat + nummer</label>
+        <input type="text" name="straat" required>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="postcode">Postcode</label>
+          <input type="text" name="postcode" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="gemeente">Gemeente</label>
+          <input type="text" name="gemeente" required>
+        </div>
+      </div>
+        <h3>Onderwijsniveau</h3>
+      <div>
+        <label for="kleuter">Kleuteronderwijs</label>
+        <input type="checkbox" name="kleuter" id="kleuter">
+      </div>
+      <div>
+        <label for="lager">Lager onderwijs</label>
+        <input type="checkbox" name="lager" id="lager">
+      </div>
+      <div>
+        <label for="secundair">Secundair onderwijs</label>
+        <input type="checkbox" name="secundair" id="secundair">
+      </div>
+      <div>
+        <label for="hoger">Hoger onderwijs</label>
+        <input type="checkbox" name="hoger" id="hoger">
+      </div>
+    </div>
+
+    <!-- Stap 2: Contactpersoon -->
+    <div class="step" id="step2">
+      <h3>2. Contactpersoon</h3>
+      <label for="Naam">Naam</label>
+      <input type="text" name="Naam" required>
+      <label for="">Voornaam</label>
+      <input type="text" name="Voornaam" required>
+      <label for="Email">E-mailadres</label>
+      <input type="email" name="Email" required>
+      <label for="telefoon">Telefoonnummer (optioneel)</label>
+      <input type="tel" name="telefoon">
+    </div>
+
+    <!-- Stap 3: Deelname & toestemming -->
+    <div class="step" id="step3">
+      <h3>3. Deelname & Toestemming</h3>
+      <label>Korte boodschap op de kaart (optioneel):</label>
+      <textarea name="boodschap" rows="3"></textarea>
+      <label for="toestemming">Ik ga akkoord met de privacyvoorwaarden</label>
+      <input type="checkbox" name="toestemming" required>
+    </div>
+
+    
+    <div class="navigation">
+      <button class="button" type="button" id="backBtn" onclick="changeStep(-1)">Vorige</button>
+      <button class="button" type="button" id="nextBtn" onclick="changeStep(1)">Volgende</button>
+      <button class="button" type="submit" id="submitBtn" style="display:none;">Inschrijven</button>
+    </div>
+  </form>
+    </main>
+    <footer class="footer">
+        <div class="test">
+            <div class="footer-menu">
+                <div><a href="../index.html">Home</a></div>
+                <div><a href="overons.html">Over ons</a></div>
+                <div><a href="materiaal.html">Lesmateriaal</a></div>
+                <div><a href="contact.html">Contact</a></div>
+            </div>
+
+            <div class="adresse">
+                <div>Huidevettersstraat 165</div>
+                <div>1000 Brussel</div>
+                <div>02 520 05 30</div>
+                <div>www.studioglobo.be</div>
+            </div>
+    </div>
+    <div class="sbtb">
+    <div><h6>Saved by the bell<br />is een actie van:</h6></div>
+        <div><img src="../images/studio logo.svg" alt="Studio Globo" class="footer-logo"></div>
+        <div><img src="../images/de keure.svg" alt="de Keure" class="footer-logo"></div>
+    </div>
+
+  <div class="footer-icon">
+    
+    <div class="disclaim">
+        <a href="">Disclaimer</a><br>
+        <a href="">Privacyverklaring</a>
+    </div>
+    <div class="socials">
+      <div><a href="#"><img src="../images/youtube.svg" alt="YouTube"></a></div>
+      <div><a href="#"><img src="../images/facebook.svg" alt="Facebook"></a></div>
+    </div>
+  </div>
+
+  <h6 class="copyright">© 2025 Studio Globo – website door EhB Studenten</h6>
+</footer>
+  <script src="../js/Hamburger.js"></script>
+</body>
+</html>
