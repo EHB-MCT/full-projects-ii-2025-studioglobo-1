@@ -96,7 +96,7 @@ a:hover,
 }
 
 .btn:hover .icon {
-	content: url("/images/search-hover.svg");
+	content: url("../images/search-hover.svg");
 }
 
 /* ----- BUTTONS ----- */
