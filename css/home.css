@@ -154,6 +154,11 @@ body {
 	background-size: 100% 93%;
 }
 
+ul li:nth-child(1) a {
+	color: #ffa63d;
+	font-weight: bold;
+}
+
 @media (min-width: 768px) {
 	h1 {
 		font-size: 4rem;
@@ -183,12 +188,11 @@ body {
 	}
 
 	.btn {
-		font-size: 1.2rem;
 		padding: 0.35rem 2rem;
 	}
 
 	.button-bell {
-		padding: 1.3rem 6rem;
+		padding: 1rem 6rem;
 		font-size: 1.5rem;
 	}
 

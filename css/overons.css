@@ -5,6 +5,11 @@
 	padding: 40px 5%;
 }
 
+ul li:nth-child(2) a {
+	color: #ffa63d;
+	font-weight: bold;
+}
+
 .flex-row {
 	display: flex;
 	align-items: center;
