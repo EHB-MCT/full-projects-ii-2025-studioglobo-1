@@ -12,6 +12,7 @@ body {
 
 .navbar {
 	margin-top: 0;
+	display: flex;
 }
 
 header,
@@ -208,6 +209,8 @@ body.no-scroll {
 .logo-menu {
 	width: 5rem;
 	margin-bottom: 1rem;
+	display: flex;
+	justify-content: center;
 }
 
 form {
