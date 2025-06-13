@@ -222,7 +222,7 @@ ul li:nth-child(1) a {
 @media (min-width: 1024px) {
 	body {
 		background-image: none;
-		background-image: url(/images/Home\ Desktop\ Line.svg);
+		background-image: url(../images/Home\ Desktop\ Line.svg);
 		background-size: 100% 85%;
 	}
 
