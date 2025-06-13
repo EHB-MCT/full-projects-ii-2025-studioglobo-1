@@ -1,0 +1,61 @@
+.over-ons {
+	display: flex;
+	flex-direction: column;
+	gap: 100px;
+	padding: 40px 5%;
+}
+
+.flex-row {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+.flex-row.reverse {
+	flex-direction: row-reverse;
+}
+
+.flex-row img {
+	width: 50%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-block {
+	width: 50%;
+}
+
+.text-block h2 {
+	font-size: 28px;
+}
+
+.text-block h4 {
+	font-size: 20px;
+	margin-bottom: 12px;
+}
+
+.text-block p {
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+.flex-row {
+	text-align: left;
+}
+.flex-row.reverse {
+	text-align: right;
+}
+
+@media (max-width: 768px) {
+	.flex-row,
+	.flex-row.reverse {
+		flex-direction: column;
+	}
+
+	.flex-row img,
+	.text-block {
+		width: 100%;
+	}
+}
