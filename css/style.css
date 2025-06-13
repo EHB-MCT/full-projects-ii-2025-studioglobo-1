@@ -116,7 +116,8 @@ a:hover,
 }
 
 .btn:hover,
-.button:hover {
+.button:hover,
+.button-bell:hover {
 	background-color: white;
 }
 
@@ -195,6 +196,7 @@ textarea {
 
 .home-image img {
 	max-width: 110%;
+	rotate: 5deg;
 	width: auto;
 	height: auto;
 }
@@ -444,10 +446,6 @@ body {
 }
 
 @media (min-width: 1024px) {
-	body {
-		display: none;
-	}
-
 	.off-screen-menu {
 		background-color: transparent;
 		height: 100%;
@@ -471,5 +469,37 @@ body {
 
 	.ham-menu {
 		display: none;
+	}
+
+	body {
+		background-image: none;
+		background-image: url(/images/Home\ Desktop\ Line.svg);
+		background-size: 100% 100%;
+	}
+
+	.header-container {
+		display: flex;
+		align-items: flex-start;
+		gap: 5rem;
+	}
+
+	.home-image img {
+		max-width: 230%;
+		height: auto;
+		rotate: 30deg;
+	}
+
+	.text-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		padding-top: 5%;
+		text-align: left;
+	}
+
+	.button-bell {
+		margin-top: 1rem;
+		padding: 1rem 5rem;
+		align-self: flex-start;
 	}
 }
