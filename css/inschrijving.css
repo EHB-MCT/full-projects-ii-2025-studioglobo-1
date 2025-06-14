@@ -7,7 +7,7 @@ body {
 @media (min-width: 1024px) {
 	body {
 		background-image: none;
-		background-image: url(/images/Lines\ -\ Desktop\ Inschrijving.svg);
+		background-image: url("../images/Lines\ -\ Desktop\ Inschrijving.svg");
 		background-size: 130% 65%;
 	}
 }

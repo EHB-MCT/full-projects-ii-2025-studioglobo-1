@@ -10,6 +10,11 @@ body {
 	overflow-x: hidden;
 }
 
+.navbar {
+	margin-top: 0;
+	display: flex;
+}
+
 header,
 main {
 	margin-inline: 5%;
@@ -49,36 +54,6 @@ p {
 	font-size: 1.1rem;
 	line-height: 1.4rem;
 }
-
-/* ----- RECTANGLES ----- */
-
-.rectangle-carousel img {
-	width: 80%;
-	padding-top: 10px;
-}
-
-.rectangle-2,
-.rectangle-3 {
-	display: none;
-}
-
-/* 
-.rectangle-1 {
-	background-image: url(/images/Rectangle\ 1.svg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center center;
-	height: 100%;
-	width: 100%;
-}
-
-.rectangle-1 h2 {
-	padding-top: 10%;
-}
-
-.rectangle-1 p {
-	padding-bottom: 6%;
-} */
 
 /* ----- LINKS ----- */
 a {
@@ -122,7 +97,7 @@ a:hover,
 }
 
 .btn:hover .icon {
-	content: url("/images/search-hover.svg");
+	content: url("../images/search-hover.svg");
 }
 
 /* ----- BUTTONS ----- */
@@ -152,62 +127,13 @@ a:hover,
 	top: 4px;
 }
 
-/* ----- FORMS ----- */
-input,
-select,
-textarea {
-	width: 80%;
-	padding: 0.8rem;
-	margin-bottom: 2rem;
-	border: 2px solid #fea033;
-	background-color: white;
-	font-size: 1rem;
-	border-radius: 10px;
-}
-
-#map {
-	width: 100%;
-	height: 20rem;
-	border-radius: 12px;
-}
-
-.search-bar {
-	border-radius: 12px 0 0 12px;
-}
-
-.btn {
-	font-size: 1rem;
-	border-radius: 0px 12px 12px 0px;
-	padding: 0.07rem 1.3rem;
-	position: absolute;
-	border-color: #ffa63d;
-}
-
-.search-container {
-	padding-right: 5rem;
-}
-
-.home-image {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding-left: 5rem;
-}
-
-.home-image img {
-	max-width: 110%;
-	rotate: 5deg;
-	width: auto;
-	height: auto;
-}
-
 /* Hamburger Menu made by Treehouse
 	Link naar zijn video: https://www.youtube.com/watch?v=aNDqzlAKmZc
 	Aangepast door Hamza El Aisati*/
 
 .off-screen-menu ul li {
 	display: block;
-	margin: 10px;
+	margin: 1rem;
 }
 
 .off-screen-menu {
@@ -216,7 +142,7 @@ textarea {
 	width: 100%;
 	position: fixed;
 	right: -100%;
-	top: 0;
+	/* top: 0; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -281,8 +207,10 @@ body.no-scroll {
 }
 
 .logo-menu {
-	width: 3.5rem;
+	width: 5rem;
 	margin-bottom: 1rem;
+	display: flex;
+	justify-content: center;
 }
 
 form {
@@ -294,85 +222,7 @@ form {
 	background-color: #fffdf8;
 }
 
-/* INFO */
-
-.desktop-rectangle {
-	display: none;
-}
-
-.info img {
-	width: 80%;
-}
-
-.button-rectangle {
-	margin: 100px 0 200px 0;
-}
-
-/* .info {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	flex-wrap: wrap;
-}
-
-.rectangle1 {
-	background-repeat: no-repeat;
-	background-size: contain;
-	margin-bottom: 30px;
-	width: 500px;
-	flex: 1;
-}
-
-.rectangle1.a {
-	padding: 5%;
-	background-image: url(/images/Rectangle\ 4.svg);
-}
-
-.rectangle1.b {
-	padding: 5%;
-	background-image: url(/images/Rectangle\ 5.svg);
-}
-
-.rectangle1.c {
-	padding: 5%;
-	background-image: url(/images/Rectangle\ 6.svg);
-}
-
-.row {
-	display: flex;
-	gap: 20px;
-}
-
-.rectangle1 img {
-	justify-content: center;
-	align-items: center;
-	flex: 1;
-}
-
-.rectangle1 h3 {
-	align-items: center;
-	font-size: 1.5rem;
-	text-align: left;
-	flex: 6;
-}
-
-.rectangle1 p {
-	text-align: left;
-	font-size: 0.9rem;
-} */
-
-/* BACKGROUND */
-
-body {
-	position: relative;
-	background-image: url("../images/Lines\ -\ Home\ Mobile\ V2.svg");
-	background-repeat: no-repeat;
-	background-position: top center;
-	background-size: 100% 93%;
-}
-
-@media (min-width: 500px) {
+/* @media (min-width: 500px) {
 	body {
 		background-size: 100% 95%;
 	}
@@ -388,68 +238,7 @@ body {
 	body {
 		background-size: 100% 97%;
 	}
-}
-
-@media (min-width: 768px) {
-	h1 {
-		font-size: 4rem;
-	}
-
-	h2 {
-		font-size: 2.8rem;
-	}
-
-	h3 {
-		font-size: 1.2rem;
-	}
-
-	h4 {
-		font-size: 1.5rem;
-	}
-
-	p {
-		font-size: 1.5rem;
-		line-height: 2rem;
-	}
-
-	.button,
-	.btn {
-		font-size: 1.2rem;
-		padding: 0.8rem 5rem;
-	}
-
-	.btn {
-		font-size: 1.2rem;
-		padding: 0.35rem 2rem;
-	}
-
-	.button-bell {
-		padding: 1.3rem 6rem;
-		font-size: 1.5rem;
-	}
-
-	input,
-	select,
-	textarea {
-		font-size: 1.2rem;
-		padding: 1rem;
-	}
-
-	#map {
-		height: 40rem;
-	}
-
-	.info {
-		flex-direction: none;
-	}
-
-	body {
-		background-size: 100% 99%;
-	}
-	/* .rectangle1 p {
-		font-size: 1.2rem;
-	} */
-}
+} */
 
 @media (min-width: 1024px) {
 	.off-screen-menu {
@@ -473,10 +262,6 @@ body {
 		align-items: flex-start;
 	}
 
-	body {
-		background-image: none;
-	}
-
 	.ham-menu {
 		display: none;
 	}
@@ -488,76 +273,9 @@ body {
 		z-index: 1;
 	}
 
-	.home-image img {
-		max-width: 230%;
-		height: auto;
-		rotate: 30deg;
-	}
-
-	.text-content {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		padding-top: 5%;
-		text-align: left;
-	}
-
 	.button-bell {
 		margin-top: 1rem;
 		padding: 1rem 5rem;
 		align-self: flex-start;
-	}
-
-	.rectangle-2,
-	.rectangle-3 {
-		display: block;
-	}
-
-	.rectangle-carousel {
-		display: flex;
-		justify-content: center;
-		width: 100%;
-	}
-
-	.rectangle-carousel div {
-		flex: 1;
-	}
-
-	.rectangle-1 {
-		padding-top: 2%;
-	}
-
-	.rectangle-2 {
-		padding-top: 1%;
-	}
-
-	.rectangle-3 {
-		padding-top: 2.5%;
-	}
-
-	.mobile-rectangle {
-		display: none;
-	}
-
-	.desktop-rectangle {
-		display: inline;
-	}
-
-	.info {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		gap: 20px;
-	}
-
-	.rectangle1.c {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-	}
-
-	header h1 {
-		font-size: 5rem;
-		line-height: 5rem;
 	}
 }
