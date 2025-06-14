@@ -1,1 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+/* ----- BASE RESET ----- */
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: #fffdf8;
+	color: #333;
+	line-height: 1.6;
+	text-align: center;
+	overflow-x: hidden;
+}
+
+.navbar {
+	margin-top: 0;
+	display: flex;
+}
+
+header,
+main {
+	margin-inline: 5%;
+}
+
+/* ----- TYPOGRAPHY ----- */
+h1,
+h2,
+h3 {
+	color: #333;
+	margin-bottom: 2rem;
+}
+
+header h1 {
+	font-size: 2.8rem;
+	font-weight: 700;
+	line-height: 3.3rem;
+}
+
+h2 {
+	font-size: 2rem;
+	font-weight: 700;
+	margin-top: 4rem;
+}
+
+h3 {
+	font-weight: 600;
+}
+
+h4 {
+	font-size: 1rem;
+	font-weight: normal;
+	margin-bottom: 2.5rem;
+}
+
+p {
+	font-size: 1.1rem;
+	line-height: 1.4rem;
+}
+
+/* ----- LINKS ----- */
+a {
+	color: black;
+	font-size: 1.5rem;
+	transition: color 0.3s;
+	text-decoration: none;
+}
+
+.nav-hover {
+	position: relative;
+	display: inline-block;
+}
+
+.nav-hover::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%) scaleX(0);
+	transform-origin: center;
+	width: 100%;
+	height: 2px;
+	background-color: #ffa63d;
+	transition: transform 0.4s ease;
+}
+
+.nav-hover:hover::after {
+	transform: translateX(-50%) scaleX(1);
+}
+
+a:hover,
+.btn:hover {
+	color: #ffa63d;
+}
+
+.btn:hover,
+.button:hover,
+.button-bell:hover {
+	background-color: white;
+}
+
+.btn:hover .icon {
+	content: url("../images/search-hover.svg");
+}
+
+/* ----- BUTTONS ----- */
+.button,
+.btn,
+.button-bell {
+	font-size: 1.5rem;
+	color: white;
+	transition: all 0.3s ease;
+	background-color: #ffa63d;
+	border-radius: 15px;
+	padding: 0.8rem 5rem;
+	font-weight: bold;
+	position: relative;
+	text-decoration: none;
+	border: 2px solid;
+	border-color: #ffa63d;
+}
+
+.button-bell {
+	padding: 1rem 5rem;
+	font-size: 1.2rem;
+}
+
+.button:active {
+	transform: translateY(4px);
+	top: 4px;
+}
+
+/* Hamburger Menu made by Treehouse
+	Link naar zijn video: https://www.youtube.com/watch?v=aNDqzlAKmZc
+	Aangepast door Hamza El Aisati*/
+
+.off-screen-menu ul li {
+	display: block;
+	margin: 1rem;
+}
+
+.off-screen-menu {
+	background-color: #fffdf8;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	right: -100%;
+	/* top: 0; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 30pt;
+	transition: 0.5s ease;
+	z-index: 1;
+}
+
+.off-screen-menu.active {
+	right: 0;
+}
+
+nav {
+	padding: 1rem;
+	display: flex;
+}
+
+.ham-menu {
+	height: 50px;
+	width: 50px;
+	margin-left: auto;
+	position: relative;
+	z-index: 1;
+}
+
+.ham-menu span {
+	height: 3px;
+	width: 50px;
+	background-color: black;
+	border-radius: 25px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: 0.5s ease;
+}
+
+.ham-menu span:nth-child(1) {
+	top: 25%;
+}
+
+.ham-menu span:nth-child(2) {
+	top: 75%;
+}
+
+.ham-menu.active span:nth-child(2) {
+	top: 50%;
+	transform: translate(-50%, 0%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(3) {
+	opacity: 0;
+}
+
+.ham-menu.active span:nth-child(1) {
+	top: 50%;
+	transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+body.no-scroll {
+	overflow: hidden;
+}
+
+.logo-menu {
+	width: 5rem;
+	margin-bottom: 1rem;
+	display: flex;
+	justify-content: center;
+}
+
+form {
+	max-width: 600px;
+	margin: auto;
+	padding: 24px 32px 32px 32px;
+	border: 2px solid;
+	border-radius: 10px;
+	background-color: #fffdf8;
+}
+
+/* @media (min-width: 500px) {
+	body {
+		background-size: 100% 95%;
+	}
+}
+
+@media (min-width: 550px) {
+	body {
+		background-size: 100% 96%;
+	}
+}
+
+@media (min-width: 60px) {
+	body {
+		background-size: 100% 97%;
+	}
+} */
+
+@media (min-width: 1024px) {
+	.off-screen-menu {
+		background-color: transparent;
+		height: 0%;
+		width: 100%;
+		left: 0;
+		position: absolute;
+		right: -100%;
+		display: block;
+		flex-direction: column;
+		justify-content: flex-end;
+		font-size: 30pt;
+		z-index: 0;
+	}
+
+	.off-screen-menu ul {
+		display: flex;
+		gap: 2rem;
+		justify-content: flex-end;
+		align-items: flex-start;
+	}
+
+	.ham-menu {
+		display: none;
+	}
+
+	.header-container {
+		display: flex;
+		align-items: flex-start;
+		gap: 15rem;
+		z-index: 1;
+		margin-inline: 10%;
+	}
+
+	.button-bell {
+		margin-top: 1rem;
+		padding: 1rem 5rem;
+		align-self: flex-start;
+	}
+}
