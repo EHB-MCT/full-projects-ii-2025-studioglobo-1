@@ -269,8 +269,9 @@ form {
 	.header-container {
 		display: flex;
 		align-items: flex-start;
-		gap: 5rem;
+		gap: 15rem;
 		z-index: 1;
+		margin-inline: 10%;
 	}
 
 	.button-bell {
