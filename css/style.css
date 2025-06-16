@@ -133,7 +133,7 @@ a:hover,
 
 .off-screen-menu ul li {
 	display: block;
-	margin: 1rem;
+	margin: 1.5rem 1rem 0 0;
 }
 
 .off-screen-menu {
@@ -166,6 +166,7 @@ nav {
 	margin-left: auto;
 	position: relative;
 	z-index: 1;
+	margin-top: 1.5rem;
 }
 
 .ham-menu span {
@@ -174,7 +175,6 @@ nav {
 	background-color: black;
 	border-radius: 25px;
 	position: absolute;
-	margin-top: 1rem;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -221,6 +221,11 @@ form {
 	border: 2px solid;
 	border-radius: 10px;
 	background-color: #fffdf8;
+}
+
+.logo-container {
+	z-index: 2;
+	margin-top: 1.8rem;
 }
 
 /* @media (min-width: 500px) {

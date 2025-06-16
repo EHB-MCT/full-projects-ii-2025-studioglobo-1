@@ -59,4 +59,8 @@ ul li:nth-child(4) a {
 		background-image: url("../images/Lines\ Contact\ Desktop.svg");
 		background-size: 100% 100%;
 	}
+
+	.off-screen-menu ul li {
+		margin-top: -1.5rem;
+	}
 }
