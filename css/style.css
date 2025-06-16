@@ -133,7 +133,7 @@ a:hover,
 
 .off-screen-menu ul li {
 	display: block;
-	margin: 1.5rem 1rem 0 0;
+	margin: 1.4rem 1rem 0 0;
 }
 
 .off-screen-menu {
@@ -142,7 +142,7 @@ a:hover,
 	width: 100%;
 	position: fixed;
 	right: -100%;
-	top: 0; 
+	top: 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -287,5 +287,11 @@ form {
 		margin-top: 1rem;
 		padding: 1rem 5rem;
 		align-self: flex-start;
+	}
+
+	.button,
+	.button-bell {
+		font-size: 1rem;
+		padding: 0.8rem 4.5rem;
 	}
 }
