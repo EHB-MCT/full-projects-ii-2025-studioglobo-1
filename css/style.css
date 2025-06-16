@@ -81,6 +81,10 @@ a {
 	transition: transform 0.4s ease;
 }
 
+nav {
+	align-items: center;
+}
+
 .nav-hover:hover::after {
 	transform: translateX(-50%) scaleX(1);
 }
@@ -174,7 +178,7 @@ nav {
 	background-color: black;
 	border-radius: 25px;
 	position: absolute;
-	margin-top: 1.6rem;
+	margin-top: 0.2rem;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -208,8 +212,7 @@ body.no-scroll {
 }
 
 .logo-menu {
-	width: 5rem;
-	margin-bottom: 1rem;
+	width: 4rem;
 	display: flex;
 	justify-content: center;
 }
@@ -286,5 +289,10 @@ form {
 		margin-top: 1rem;
 		padding: 1rem 5rem;
 		align-self: flex-start;
+	}
+
+	.button,
+	.btn {
+		font-size: 1rem;
 	}
 }

@@ -181,12 +181,6 @@ ul li:nth-child(1) a {
 		line-height: 2rem;
 	}
 
-	.button,
-	.btn {
-		font-size: 1.2rem;
-		padding: 0.8rem 5rem;
-	}
-
 	.btn {
 		padding: 0.35rem 2rem;
 	}
