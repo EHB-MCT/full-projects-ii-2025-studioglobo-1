@@ -149,18 +149,6 @@ a:hover,
   font-size: 35pt;
   transition: 0.5s ease;
   z-index: 1;
-	background-color: #fffdf8;
-	height: 100%;
-	width: 100%;
-	position: fixed;
-	right: -100%;
-	top: 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	font-size: 35pt;
-	transition: 0.5s ease;
-	z-index: 1;
 }
 
 .off-screen-menu.active {
