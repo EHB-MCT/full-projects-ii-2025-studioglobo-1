@@ -1,17 +1,24 @@
-body {
-  background-image: none;
-  background-image: url();
-  background-size: 100% 100%;
-}
-
 @media (min-width: 1024px) {
   body {
     background-image: none;
     background-image: url("../images/Lines\ -\ Desktop\ Inschrijving.svg");
-    background-size: 130% 65%;
   }
 
-	.off-screen-menu ul li {
-		margin-top: -1.5rem;
-	}
+  .off-screen-menu ul li {
+    margin-top: -1.5rem;
+  }
+}
+
+.step {
+  display: none;
+}
+.step.active {
+  display: block;
+}
+.navigation {
+  margin-top: 20px;
+}
+button {
+  padding: 10px 15px;
+  margin-right: 10px;
 }
