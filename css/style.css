@@ -282,17 +282,6 @@ form {
     margin-inline: 10%;
   }
 
-	.button-bell {
-		margin-top: 1rem;
-		padding: 1rem 5rem;
-		align-self: flex-start;
-	}
-
-	.button,
-	.button-bell {
-		font-size: 1rem;
-		padding: 0.8rem 4.5rem;
-	}
   .button-bell {
     margin-top: 1rem;
     padding: 1rem 5rem;
