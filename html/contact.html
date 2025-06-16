@@ -3,9 +3,11 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=play_arrow" />
 		<link href="../css/style.css" rel="stylesheet" />
 		<link href="../css/contact.css" rel="stylesheet" />
-		<link rel="stylesheet" href="../css/footer.css" />
+			<link rel="stylesheet" href="../css/footer.css" />
+		<link rel="stylesheet" href="../css/faq.css">
 
 		<title>Contact</title>
 	</head>
@@ -27,7 +29,7 @@
 					</li>
 					<li><a href="contact.html" class="nav-hover">Contact</a></li>
 					<li>
-						<a href="inschrijving.html" class="button">Inschrijven</a>
+						<a href="inschrijving.html" class="button">Sign up</a>
 					</li>
 				</ul>
 			</div>
@@ -70,37 +72,63 @@
 					<button class="button" type="submit">Verstuur</button>
 				</form>
 			</section>
-			<section>
-				<h2>FAQ</h2>
-				<div class="faq-container">
-					<div class="faq-item">
-						<div class="faq-question">
-							Mogen wij de lokale pers uitnodigen?
-							<span class="faq-icon">&#8594;</span>
-						</div>
-						<div class="faq-answer-wrapper">
-							<div class="faq-answer">
-								Ja, je mag de lokale pers uitnodigen. We raden zelfs aan om dit
-								te doen om je actie zichtbaarder te maken in de lokale
-								gemeenschap!
-							</div>
-						</div>
-					</div>
-					<div class="faq-item">
-						<div class="faq-question">
-							Is er een vast tijdstip voor het belmoment?
-							<span class="faq-icon">&#8594;</span>
-						</div>
-						<div class="faq-answer-wrapper">
-							<div class="faq-answer">
-								Nee, er is geen vast tijdstip bepaald. Elke school of klas kan
-								het belmoment organiseren op het moment dat het best uitkomt
-								voor de leerkrachten en de leerlingen.
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+		<section>
+            <h2>FAQ</h2>
+            <div class="faq-container">
+              <div class="faq-item">
+                <div class="faq-question">
+                  Mogen wij de lokale pers uitnodigen?
+                  <span class="material-symbols-outlined">play_arrow</span>
+                </div>
+                <div class="faq-answer-wrapper">
+                  <div class="faq-answer">
+                    Ja, je mag de lokale pers uitnodigen. We raden zelfs aan om dit te doen om je actie zichtbaarder te maken in de lokale gemeenschap!
+                  </div>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">
+                  Is er een vast tijdstip voor het belmoment?
+                  <span class="faq-icon">&#8594;</span>
+                </div>
+                <div class="faq-answer-wrapper">
+                  <div class="faq-answer">
+                    Nee, er is geen vast tijdstip bepaald. Elke school of klas kan het belmoment organiseren op het moment dat het best uitkomt voor de leerkrachten en de leerlingen.
+                  </div>
+                </div>
+            </div>
+			<div class="faq-item">
+                <div class="faq-question">
+                  Is er een vast tijdstip voor het belmoment?
+                  <span class="faq-icon">&#8594;</span>
+                </div>
+                <div class="faq-answer-wrapper">
+                  <div class="faq-answer">
+                    Nee, er is geen vast tijdstip bepaald. Elke school of klas kan het belmoment organiseren op het moment dat het best uitkomt voor de leerkrachten en de leerlingen.
+                  </div>
+                </div>
+            </div><div class="faq-item">
+                <div class="faq-question">
+                  Is er een vast tijdstip voor het belmoment?
+                  <span class="faq-icon">&#8594;</span>
+                </div>
+                <div class="faq-answer-wrapper">
+                  <div class="faq-answer">
+                    Nee, er is geen vast tijdstip bepaald. Elke school of klas kan het belmoment organiseren op het moment dat het best uitkomt voor de leerkrachten en de leerlingen.
+                  </div>
+                </div>
+            </div><div class="faq-item">
+                <div class="faq-question">
+                  Is er een vast tijdstip voor het belmoment?
+                  <span class="faq-icon">&#8594;</span>
+                </div>
+                <div class="faq-answer-wrapper">
+                  <div class="faq-answer">
+                    Nee, er is geen vast tijdstip bepaald. Elke school of klas kan het belmoment organiseren op het moment dat het best uitkomt voor de leerkrachten en de leerlingen.
+                  </div>
+                </div>
+            </div>
+        </section>
 		</main>
 
 		<footer class="footer">
@@ -158,6 +186,20 @@
 				© 2025 Studio Globo – website door EhB Studenten
 			</h6>
 		</footer>
-		<script src="../js/Hamburger.js"></script>
-	</body>
+<script src="../js/Hamburger.js"></script>
+<script>
+		// Accordéon comportement
+		document.querySelectorAll('.faq-question').forEach((question, idx) => {
+		question.addEventListener('click', function() {
+			const item = this.parentElement;
+			// Fermer les autres
+			document.querySelectorAll('.faq-item').forEach((el, i) => {
+			if (el !== item) el.classList.remove('open');
+			});
+			// Toggle celui cliqué
+			item.classList.toggle('open');
+		});
+		});
+</script>
+</body>
 </html>
