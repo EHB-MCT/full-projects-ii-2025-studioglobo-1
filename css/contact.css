@@ -6,16 +6,12 @@
 	flex: 1;
 }
 label {
+	color: white;
 	font-size: 12pt;
 	text-align: left;
 	font-weight: bold;
 	margin-bottom: 5px;
 	display: block;
-}
-
-textarea {
-	min-height: 100px;
-	resize: vertical;
 }
 
 input,
@@ -26,7 +22,7 @@ textarea {
 	padding: 8px 12px;
 	border-radius: 6px;
 	font-size: 15px;
-	border: 2px solid #fea033;
+	border: 1px solid #000;
 	resize: vertical;
 	margin-bottom: 20px;
 	box-sizing: border-box;
@@ -41,16 +37,6 @@ body {
 ul li:nth-child(4) a {
 	color: #ffa63d;
 	font-weight: bold;
-}
-
-@media (max-width: 600px) {
-	.contact-form {
-		padding: 12px 6px;
-	}
-	.form-row {
-		flex-direction: column;
-		gap: 0;
-	}
 }
 
 @media (min-width: 1024px) {
