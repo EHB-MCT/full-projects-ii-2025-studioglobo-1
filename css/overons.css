@@ -53,15 +53,21 @@ ul li:nth-child(2) a {
   text-align: right;
 }
 
-@media (max-width: 768px) {
-  .flex-row,
-  .flex-row.reverse {
-    flex-direction: column;
-  }
+@media (min-width: 768px) {
+	.flex-row,
+	.flex-row.reverse {
+		flex-direction: column;
+	}
 
   .flex-row img,
   .text-block {
     width: 100%;
     text-align: center;
   }
+}
+
+@media (min-width: 1024px) {
+	.off-screen-menu ul li {
+		margin-top: -1.5rem;
+	}
 }

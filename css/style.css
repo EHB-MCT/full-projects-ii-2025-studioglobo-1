@@ -132,8 +132,8 @@ a:hover,
 	Aangepast door Hamza El Aisati*/
 
 .off-screen-menu ul li {
-  display: block;
-  margin: 1rem;
+	display: block;
+	margin: 1.5rem 1rem 0 0;
 }
 
 .off-screen-menu {
@@ -161,24 +161,24 @@ nav {
 }
 
 .ham-menu {
-  height: 50px;
-  width: 50px;
-  margin-left: auto;
-  position: relative;
-  z-index: 1;
+	height: 50px;
+	width: 50px;
+	margin-left: auto;
+	position: relative;
+	z-index: 1;
 }
 
 .ham-menu span {
-  height: 3px;
-  width: 50px;
-  background-color: black;
-  border-radius: 25px;
-  position: absolute;
-  margin-top: 1rem;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.5s ease;
+	height: 3px;
+	width: 50px;
+	background-color: black;
+	border-radius: 25px;
+	position: absolute;
+	margin-top: 1rem;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: 0.5s ease;
 }
 
 .ham-menu span:nth-child(1) {
@@ -220,6 +220,11 @@ form {
   padding: 24px 32px 32px 32px;
   border-radius: 10px;
   background-color: #f7a6a6;
+}
+
+.logo-container {
+	z-index: 2;
+	margin-top: 1.8rem;
 }
 
 /* @media (min-width: 500px) {
