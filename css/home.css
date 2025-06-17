@@ -220,10 +220,15 @@ ul li:nth-child(1) a {
 		background-size: 100% 85%;
 	}
 
-	.home-image img {
-		max-width: 230%;
+	.home-image {
+		padding-top: 6rem;
+		transform: rotate(15deg) translateX(-10%);
 		height: auto;
-		rotate: 30deg;
+	}
+
+	.home-image img {
+		max-width: 40vw;
+		width: 40rem;
 	}
 
 	.text-content {
@@ -283,7 +288,7 @@ ul li:nth-child(1) a {
 	}
 
 	header h1 {
-		font-size: 5rem;
+		font-size: 4rem;
 		line-height: 5rem;
 	}
 }
