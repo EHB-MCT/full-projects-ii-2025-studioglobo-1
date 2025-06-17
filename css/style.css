@@ -90,7 +90,8 @@ nav {
 }
 
 a:hover,
-.btn:hover {
+.btn:hover,
+.button:hover {
 	color: #ffa63d;
 }
 
