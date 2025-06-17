@@ -1,10 +1,58 @@
-ul li:nth-child(3) a {
-	color: #ffa63d;
-	font-weight: bold;
-}
+.card-wrapper {
+	margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding-inline: 20%;
+		text-align: start;
+      }
 
-@media (min-width: 1024px) {
-	.off-screen-menu ul li {
-		margin-top: -1.6rem;
-	}
-}
+      .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        overflow: hidden;
+        font-family: sans-serif;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        background: white;
+      }
+
+      .card-img {
+        background-color: #7a848e;
+        height: 150px;
+      }
+
+      .card-body {
+        padding: 16px;
+        position: relative;
+      }
+
+      .card-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0 0 8px;
+      }
+
+      .download-icon {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #ffa63d;
+        transition: color 0.2s ease;
+      }
+
+      .download-icon:hover {
+        color: #0056b3;
+      }
+
+      /* À partir de 600px → 2 cartes côte à côte */
+      @media (min-width: 600px) {
+        .card {
+          flex: 1 1 calc(50% - 20px);
+          max-width: calc(50% - 20px);
+        }
+      }

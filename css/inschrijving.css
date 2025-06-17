@@ -1,24 +1,33 @@
 @media (min-width: 1024px) {
-	body {
-		background-image: none;
-		background-image: url("../images/Lines\ -\ Desktop\ Inschrijving.svg");
-	}
+  body {
+    background-image: none;
+    background-image: url("../images/Lines\ -\ Desktop\ Inschrijving.svg");
+  }
 
-	.off-screen-menu ul li {
-		margin-top: -1.6rem;
-	}
+  .off-screen-menu ul li {
+    margin-top: -1.6rem;
+  }
 }
 
 .step {
-	display: none;
+  display: none;
 }
 .step.active {
-	display: block;
+  display: block;
 }
 .navigation {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 button {
-	padding: 10px 15px;
-	margin-right: 10px;
+  padding: 10px 15px;
+  margin-right: 10px;
+}
+
+.check {
+  display: flex;
+  gap: 1rem;
+}
+
+input[type="checkbox"] {
+  accent-color: white;
 }
