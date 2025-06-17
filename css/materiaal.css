@@ -50,8 +50,13 @@
 }
 
 ul li:nth-child(3) a {
-	color: #ffa63d;
-	font-weight: bold;
+  color: #ffa63d;
+  font-weight: bold;
+}
+
+.nav a:nth-child(1) {
+  background-color: white;
+  color: #ffa63d;
 }
 
 @media (min-width: 600px) {
@@ -62,7 +67,7 @@ ul li:nth-child(3) a {
 }
 
 @media (min-width: 1024px) {
-	.off-screen-menu ul li {
-		margin-top: -1.6rem;
-	}
+  .off-screen-menu ul li {
+    margin-top: -1.6rem;
+  }
 }

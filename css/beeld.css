@@ -1,0 +1,35 @@
+.card-img.beeld1 {
+    background-image: url(../beeld/beeld1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-img.beeld2 {
+    background-image: url(../beeld/beeld2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-img.beeld3 {
+    background-image: url(../beeld/beeld3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-img.beeld4 {
+    background-image: url(../beeld/beeld4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-img.beeld5 {
+    background-image: url(../beeld/beeld5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-img.beeld6 {
+    background-image: url(../beeld/beeld6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
