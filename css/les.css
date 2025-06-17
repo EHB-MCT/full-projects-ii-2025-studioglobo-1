@@ -1,0 +1,11 @@
+.card-img.les1 {
+    background-image: url(../les/les1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-img.les2 {
+    background-image: url(../les/les2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
