@@ -1,0 +1,47 @@
+.form-row {
+	display: flex;
+	gap: 16px;
+}
+.form-row .form-group {
+	flex: 1;
+}
+label {
+	color: white;
+	font-size: 12pt;
+	text-align: left;
+	font-weight: bold;
+	margin-bottom: 5px;
+	display: block;
+}
+
+input,
+select,
+textarea {
+	text-align: left;
+	width: 100%;
+	padding: 8px 12px;
+	border-radius: 6px;
+	font-size: 15px;
+	border: 1px solid #000;
+	resize: vertical;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: none;
+	background-image: url(../images/Lines\ Contact\ Mobile.svg);
+	background-size: 100% 100%;
+}
+
+@media (min-width: 1024px) {
+	body {
+		background-image: none;
+		background-image: url("../images/Lines\ Contact\ Desktop.svg");
+		background-size: 100% 100%;
+	}
+
+	.off-screen-menu ul li {
+		margin-top: -1.5rem;
+	}
+}
