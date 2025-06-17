@@ -93,6 +93,7 @@ a:hover,
 .btn:hover,
 .button:hover {
 	color: #ffa63d;
+	cursor: pointer;
 }
 
 .btn:hover,
