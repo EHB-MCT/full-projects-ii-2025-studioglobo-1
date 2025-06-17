@@ -33,3 +33,8 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.nav a:nth-child(2) {
+  background-color: white;
+  color: #ffa63d;
+}
