@@ -233,10 +233,27 @@ ul li:nth-child(1) a {
 		line-height: 5rem;
 	}
 
+	@keyframes subtle-rotate {
+		0% {
+			transform: rotate(0deg);
+		}
+		50% {
+			transform: rotate(1.5deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}
+
 	.bg-image {
 		position: relative;
 		width: 100%;
 		height: auto;
+	}
+
+	.bg-image svg {
+		animation: subtle-rotate 5s ease-in-out infinite;
+		transform-origin: center;
 	}
 
 	.blue-line {
