@@ -32,6 +32,7 @@ textarea {
 	width: 100%;
 	height: 20rem;
 	border-radius: 12px;
+	filter: sepia(50%) hue-rotate(-20deg);
 }
 
 .search-bar {
@@ -92,7 +93,7 @@ ul li:nth-child(1) a {
 	font-weight: bold;
 }
 
-.line-blue-yellow {
+.bg-image svg {
 	display: none;
 }
 
@@ -141,17 +142,15 @@ ul li:nth-child(1) a {
 	.info {
 		flex-direction: none;
 	}
-
-	/* .rectangle1 p {
-		font-size: 1.2rem;
-	} */
 }
 
 @media (min-width: 1024px) {
 	body {
 		background-image: none;
-		/* background-image: url("../images/Home\ Desktop\ Line.svg"); */
-		/* background-size: 100% 85%; */
+	}
+
+	.bg-image svg {
+		display: block;
 	}
 
 	.home-container {
@@ -258,6 +257,15 @@ ul li:nth-child(1) a {
 		height: auto;
 		object-fit: cover;
 		z-index: -1;
+	}
+
+	.red-green-lines {
+		position: absolute;
+		width: 400%;
+		right: -140%;
+		height: 94%;
+		z-index: -1;
+		overflow-x: hidden;
 	}
 }
 
