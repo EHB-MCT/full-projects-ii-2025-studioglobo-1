@@ -85,10 +85,10 @@
         <!-- Stap 2: Contactpersoon -->
         <div class="step" id="step2">
           <h3>2. Contactpersoon</h3>
-          <label for="Naam">Naam</label>
-          <input type="text" name="Naam" required />
-          <label for="">Voornaam</label>
-          <input type="text" name="Voornaam" required />
+          <label for="naam">Naam</label>
+          <input type="text" name="naam" required />
+          <label for="voornaam">Voornaam</label>
+          <input type="text" name="voornaam" required />
           <label for="Email">E-mailadres</label>
           <input type="email" name="Email" required />
           <label for="telefoon">Telefoonnummer (optioneel)</label>
@@ -98,12 +98,18 @@
         <!-- Stap 3: Deelname & toestemming -->
         <div class="step" id="step3">
           <h3>3. Deelname & Toestemming</h3>
-          <label>Korte boodschap op de kaart (optioneel):</label>
-          <textarea name="boodschap" rows="3"></textarea>
-          <label for="toestemming"
-            >Ik ga akkoord met de privacyvoorwaarden</label
-          >
-          <input type="checkbox" name="toestemming" required />
+          <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" required />
+          </div>
+          <div>
+            <label for="password1">Confirm password</label>
+            <input type="password" name="password1" required />
+          </div>
+          <div class="check">
+          <div><input type="checkbox" name="toestemming" required /></div>
+          <div><label for="toestemming">Ik ga akkoord met de privacyvoorwaarden</label></div>
+          </div>
         </div>
 
         <div class="navigation">
@@ -133,6 +139,7 @@
           </button>
         </div>
       </form>
+      <a class="btn" href="login.html">login</a>
     </main>
     <footer>
       <div class="test">
@@ -190,28 +197,6 @@
       </h6>
     </footer>
     <script src="../js/Hamburger.js"></script>
-    <script>
-      let currentStep = 0;
-      const steps = document.querySelectorAll(".step");
-      const nextBtn = document.getElementById("nextBtn");
-      const backBtn = document.getElementById("backBtn");
-      const submitBtn = document.getElementById("submitBtn");
-
-      function changeStep(direction) {
-        steps[currentStep].classList.remove("active");
-        currentStep += direction;
-        steps[currentStep].classList.add("active");
-
-        backBtn.style.display = currentStep === 0 ? "none" : "inline";
-        nextBtn.style.display =
-          currentStep === steps.length - 1 ? "none" : "inline";
-        submitBtn.style.display =
-          currentStep === steps.length - 1 ? "inline" : "none";
-      }
-
-      document.addEventListener("DOMContentLoaded", () => {
-        backBtn.style.display = "none";
-      });
-    </script>
+    <script src="../js/signup.js"></script>
   </body>
 </html>
