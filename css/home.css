@@ -313,49 +313,37 @@ ul li:nth-child(1) a {
 
 	.line-blue,
 	.line-yellow {
-		position: absolute;
+		/* position: relative;
 		top: 0;
 		transform: translateY(0);
 		z-index: -1;
-		height: 100%;
-	}
-
-	.line-blue {
-		left: -12vw;
+		height: 100%; */
+		position: relative;
 		width: 100%;
-		height: 150vh;
+		height: auto;
 	}
 
 	.line-yellow {
-		right: 0;
-		width: 40%;
+		right: 3rem;
+		width: 55rem;
 	}
 
 	.bg-image {
-		width: 100%;
+		position: absolute;
+		left: 0;
+		width: 90%;
+		max-width: 1000px;
 		height: auto;
 		object-fit: cover;
+		z-index: -1;
 	}
 }
 
 @media (min-width: 1440px) {
-	.line-blue svg {
-		height: 175vh;
-	}
-
-	.line-yellow {
-		right: 0;
-		width: 40%;
+	.bg-image {
+		max-width: 1030px;
 	}
 }
 
 @media (min-width: 2560px) {
-	.line-blue {
-		left: 10vw;
-	}
-
-	.line-yellow {
-		right: 0;
-		width: 40%;
-	}
 }
