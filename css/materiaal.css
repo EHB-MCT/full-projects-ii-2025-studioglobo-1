@@ -21,7 +21,7 @@
 
 .card-img {
   background-color: #7a848e;
-  height: 450px;
+  height: 18vw;
 }
 
 .card-body {
@@ -50,8 +50,8 @@
 }
 
 ul li:nth-child(3) a {
-	color: #ffa63d;
-	font-weight: bold;
+  color: #ffa63d;
+  font-weight: bold;
 }
 
 @media (min-width: 600px) {
@@ -62,7 +62,7 @@ ul li:nth-child(3) a {
 }
 
 @media (min-width: 1024px) {
-	.off-screen-menu ul li {
-		margin-top: -1.6rem;
-	}
+  .off-screen-menu ul li {
+    margin-top: -1.6rem;
+  }
 }

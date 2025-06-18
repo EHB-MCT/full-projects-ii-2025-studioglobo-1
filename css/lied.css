@@ -1,0 +1,34 @@
+.card-img.lied1 {
+    background-image: url(../lied/lied1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-img.lied2 {
+    background-image: url(../lied/lied2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-img.lied3 {
+    background-image: url(../lied/lied3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-img.lied4 {
+    background-image: url(../lied/lied4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-img.lied5 {
+    background-image: url(../lied/lied5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav a:nth-child(3) {
+  background-color: white;
+  color: #ffa63d;
+}
