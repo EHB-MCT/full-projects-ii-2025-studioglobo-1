@@ -31,10 +31,11 @@ textarea {
 }
 
 body {
-	background-image: none;
-	background-image: url(../images/Lines\ Contact\ Mobile.svg);
-	top: 0;
-	background-size: 100% 100%;
+	position: relative;
+	background-image: url("../images/Lines\ Login\ Mobile.svg");
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 200% auto;
 }
 
 .bg-image svg {
