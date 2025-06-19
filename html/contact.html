@@ -234,19 +234,6 @@
       </h6>
     </footer>
     <script src="../js/Hamburger.js"></script>
-    <script>
-      // Accordéon comportement
-      document.querySelectorAll(".faq-question").forEach((question, idx) => {
-        question.addEventListener("click", function () {
-          const item = this.parentElement;
-          // Fermer les autres
-          document.querySelectorAll(".faq-item").forEach((el, i) => {
-            if (el !== item) el.classList.remove("open");
-          });
-          // Toggle celui cliqué
-          item.classList.toggle("open");
-        });
-      });
-    </script>
+    <script src="../js/contact.js"></script>
   </body>
 </html>

@@ -25,8 +25,11 @@ form.addEventListener("submit", async function (e) {
       window.location.href = "materiaal.html";
     } else {
       errorDiv.textContent = "Login mislukt. Controleer je gegevens.";
+      console.error("Login error details:", data);
     }
   } catch (err) {
     errorDiv.textContent = "Serverfout. Probeer later opnieuw.";
   }
 });
+
+

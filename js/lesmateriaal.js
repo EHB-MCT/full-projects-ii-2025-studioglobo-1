@@ -14,16 +14,28 @@ async function fetchUserInfo() {
     if (response.ok) {
       const user = await response.json();
       document.getElementById("welcome").textContent = `Welkom, ${user.voornaam} ${user.naam} !`;
+    } else {
+      const error = await response.json();
+      console.error("Réponse de Pocketbase (NOT OK):", error);
+      alert("Erreur API : " + JSON.stringify(error));
+      // Tu peux commenter la ligne suivante TEMPORAIREMENT pour voir le message sans redirection
+      // localStorage.removeItem("pb_token");
+      // localStorage.removeItem("user_id");
+      // window.location.href = "login.html";
     }
   } catch (e) {
-    window.location.href = "login.html";
+    console.error("Erreur attrapée par le catch:", e);
+    alert("Erreur JS (catch): " + e);
+    // localStorage.removeItem("pb_token");
+    // localStorage.removeItem("user_id");
+    // window.location.href = "login.html";
   }
 }
 document.addEventListener("DOMContentLoaded", fetchUserInfo);
 
-// Déconnexion
 document.getElementById("logoutBtn").addEventListener("click", function() {
   localStorage.removeItem("pb_token");
   localStorage.removeItem("user_id");
+  localStorage.removeItem("login_time"); // Si tu as ajouté la gestion du temps de session
   window.location.href = "login.html";
 });
