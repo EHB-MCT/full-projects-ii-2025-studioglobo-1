@@ -6,6 +6,11 @@ footer {
   color: white;
 }
 
+h6 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
 footer a {
   font-size: 1rem;
   font-weight: 700;
