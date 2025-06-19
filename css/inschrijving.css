@@ -30,6 +30,10 @@ input[type="checkbox"] {
 }
 
 @media (min-width: 1024px) {
+	footer {
+		margin-top: 25rem;
+	}
+
 	body {
 		background-image: none;
 	}
@@ -77,7 +81,7 @@ input[type="checkbox"] {
 
 	.red-line {
 		position: absolute;
-		width: 65vw;
+		width: 73rem;
 		top: -2rem;
 		left: 25rem;
 		height: auto;
@@ -87,7 +91,7 @@ input[type="checkbox"] {
 
 	.yellow-line {
 		position: absolute;
-		width: 105vw;
+		width: 125rem;
 		left: -3rem;
 		height: auto;
 		object-fit: cover;

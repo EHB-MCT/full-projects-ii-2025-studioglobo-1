@@ -59,12 +59,12 @@ body {
 
 @media (min-width: 320px) {
 	footer {
-		margin-top: 80%;
+		margin-top: 20rem;
 	}
 }
 
 @media (min-width: 1024px) {
 	footer {
-		margin-top: 30%;
+		margin-top: 5rem;
 	}
 }
