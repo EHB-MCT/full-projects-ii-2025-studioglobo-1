@@ -1,212 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../css/style.css" rel="stylesheet" />
-    <link href="../css/inschrijving-form.css" rel="stylesheet" />
-    <link href="../css/inschrijving.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/footer.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="logo-container">
-        <a href="../index.html">
-          <img src="../images/Logo Globo.svg" alt="Logo" class="logo-menu"
-        /></a>
-      </div>
-      <div class="off-screen-menu">
-        <ul>
-          <li><a href="../index.html" class="nav-hover">Home</a></li>
-          <li>
-            <a href="overons.html" class="nav-hover">Over ons</a>
-          </li>
-          <li>
-            <a href="materiaal.html" class="nav-hover">Lesmateriaal</a>
-          </li>
-          <li><a href="contact.html" class="nav-hover">Contact</a></li>
-          <li>
-            <a href="inschrijving.html" class="button">Sign up</a>
-          </li>
-        </ul>
-      </div>
-      <div class="ham-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-    <main>
-      <h2>INSCHRIJVING VOOR SAVED BY THE BELL</h2>
-      <form id="inschrijfformulier">
-        <!-- Stap 1: Schoolgegevens -->
-        <div class="step active" id="step1">
-          <h3>1. Schoolgegevens</h3>
-          <div>
-            <label for="school">Naam van de school</label>
-            <input type="text" name="school" required />
-          </div>
-          <div>
-            <label for="straat">Straat + nummer</label>
-            <input type="text" name="straat" required />
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="postcode">Postcode</label>
-              <input type="text" name="postcode" required />
-            </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="../css/style.css" rel="stylesheet" />
+		<link href="../css/inschrijving-form.css" rel="stylesheet" />
+		<link href="../css/inschrijving.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/footer.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="logo-container">
+				<a href="../index.html">
+					<img src="../images/Logo Globo.svg" alt="Logo" class="logo-menu"
+				/></a>
+			</div>
+			<div class="off-screen-menu">
+				<ul>
+					<li><a href="../index.html" class="nav-hover">Home</a></li>
+					<li>
+						<a href="overons.html" class="nav-hover">Over ons</a>
+					</li>
+					<li>
+						<a href="materiaal.html" class="nav-hover">Lesmateriaal</a>
+					</li>
+					<li><a href="contact.html" class="nav-hover">Contact</a></li>
+					<li>
+						<a href="inschrijving.html" class="button">Sign up</a>
+					</li>
+				</ul>
+			</div>
+			<div class="ham-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</nav>
+		<main>
+			<section class="bg-image">
+				<svg
+					class="red-line"
+					width="994"
+					height="1279"
+					viewBox="0 0 994 1279"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M3 1263.5C193.274 1303.33 168.435 465.601 517.598 568.439C899.675 680.97 1120.02 246.767 880.001 54.7933"
+						stroke="#F7A6A6"
+						stroke-width="27"
+					/>
+					<path
+						d="M859.909 35.5082L859.908 35.6846"
+						stroke="white"
+						stroke-width="45"
+						stroke-linecap="round"
+					/>
+					<path
+						d="M871.61 47.604L871.288 47.6015"
+						stroke="white"
+						stroke-width="45"
+						stroke-linecap="round"
+					/>
+					<path
+						d="M839.588 49.7205C836.759 49.3461 833.958 49.4992 833.34 49.759C833.052 49.8801 832.777 49.8447 832.645 49.1161C831.958 45.3333 833.072 44.4425 833.22 42.6233C833.307 41.5443 833.845 40.8607 834.416 40.0422C835.138 39.0058 834.672 38.0449 834.595 37.486C834.494 36.7436 833.77 36.4487 833.716 36.3584C833.455 35.9224 835.029 39.4905 836.294 43.1734C837.053 45.3837 837.03 46.8717 837.151 48.8658C837.49 54.4501 836.974 55.747 837.1 56.9006C837.195 57.7714 837.6 58.5228 837.864 58.8476C838.952 60.1891 840.271 59.7798 841.501 60.2866C842.974 60.8934 844.073 61.0436 845.891 61.204C846.797 61.2838 848.287 61.2523 848.92 61.2572C849.554 61.2621 849.288 61.26 848.86 61.1694C846.908 60.7568 845.115 60.1732 843.554 59.7767C842.089 59.4046 840.715 58.8448 839.75 58.6592C838.297 58.3798 837.02 58.1109 836.157 57.9552C835.177 57.7784 833.908 57.3215 833.13 57.1092C832.474 56.9297 831.818 56.7763 831.175 56.5359C830.531 56.2955 829.785 55.9388 828.953 55.6369C828.267 55.3875 827.643 54.9804 825.484 53.499C824.21 52.6242 823.37 51.8926 822.674 51.3564C822.063 50.8858 821.285 50.582 820.587 50.4276C819.928 50.2821 818.664 50.0892 817.665 49.906C816.777 49.7432 815.817 49.5981 814.959 49.3561C814.136 49.1239 813.514 48.6985 812.871 48.429C812.186 48.142 811.588 47.6854 810.813 47.2376C810.482 47.0468 810.142 46.967 810.034 46.878C809.988 46.8401 810.351 46.8504 810.514 46.939C811.076 47.2447 811.473 48.0302 812.432 48.9795C813.206 49.7466 813.657 50.5199 813.924 51.1085C814.379 52.1139 815.521 52.5909 816.378 53.0393C817.215 53.4774 818.089 53.9053 818.974 54.0593C819.986 54.2353 820.873 54.6322 822.105 55.2872C822.941 55.7314 823.873 55.8299 825.266 55.9896C826.292 56.1072 827.145 56.2678 828.188 56.7749C828.864 57.1037 829.872 57.4034 830.892 57.7376C832.089 58.1295 833.196 58.3144 833.894 58.5244C834.625 58.7442 835.446 58.9772 836.998 59.1955C838.712 59.4365 840.211 59.6029 841.562 59.3796C843.008 59.1405 843.926 58.8095 844.974 58.7866C845.871 58.7671 846.716 59.0637 851.184 59.187C852.8 59.2317 855.336 59.719 856.937 59.8776C857.127 59.8964 857.338 59.9107 857.5 59.9993C858.231 60.3991 858.67 61.6213 858.8 62.8279C858.848 63.2752 858.607 63.6228 858.418 64.0023C857.944 64.9531 856.936 65.3121 856.314 65.6927C856.177 65.7761 856.229 66.1286 856.28 66.3663C856.487 67.3185 857.503 67.7894 858.171 68.2637C859.115 68.9332 859.314 70.1527 859.981 70.7179C860.496 71.1543 860.914 71.7525 861.501 72.1415C862.169 72.5837 862.838 73.0019 863.585 73.4504C864.449 73.9687 865.028 74.4298 865.83 74.996C866.719 75.6244 867.539 76.1565 868.398 76.3104C869.528 76.5129 870.754 76.8867 871.613 76.9824C872.553 77.087 873.381 77.496 874.557 77.6514C877.227 78.0042 877.891 77.2978 878.698 76.9503C879.642 76.5442 880.422 75.7897 881.822 74.9476C882.781 74.3708 883.228 73.6346 883.903 73.1106C884.818 72.4 885.601 71.5962 886.038 70.9222C886.533 70.1582 887.334 69.4928 887.928 68.9374C888.525 68.3785 888.635 67.5626 889.017 66.7717C889.509 65.7514 889.246 64.5722 889.386 63.6869C889.498 62.976 889.746 61.9303 889.913 60.8988C890.048 60.0647 890.514 59.1704 890.976 58.2912C891.572 57.1538 891.605 56.2967 891.879 55.5923C891.946 55.4205 891.989 55.2413 892.013 55.6463C892.175 58.2871 891.855 59.5793 891.687 60.6999C891.651 60.9403 891.577 61.1682 891.523 61.2004C890.508 61.8045 891.596 57.7077 891.741 56.2704C891.829 55.4067 892.205 54.5974 892.401 53.8325C892.596 53.0701 892.92 52.1335 893.087 51.3683C893.261 50.5736 893.793 49.9636 893.99 48.7348C894.518 45.4275 893.887 43.9742 893.733 42.8777C893.603 41.9467 893.444 37.6491 893.167 34.9951C893.084 34.1959 892.453 33.5494 892.027 32.8397C891.617 32.1558 891.339 31.4242 891.047 30.6864C890.689 29.7789 890.172 29.1222 889.667 28.5583C888.791 27.5805 887.563 26.2201 887.029 25.5404C886.371 24.7022 885.643 24.3251 885.001 23.8183C884.406 23.3487 883.72 22.8393 883.052 22.3632C882.266 21.8037 881.475 21.411 880.834 20.7887C880.265 20.2357 879.445 20.1007 878.613 19.8589C877.914 19.6554 877.303 19.2023 876.525 19.1073C875.831 19.0226 875.213 18.6572 874.57 18.4167C873.926 18.1763 873.286 17.8204 872.643 17.4909C871.955 17.138 871.362 16.571 870.72 16.2124C869.935 15.7745 869.277 15.2603 868.501 14.8725C867.851 14.5476 867.19 14.3623 866.52 14.1508C865.716 13.8972 864.832 13.9315 864 13.7787C863.332 13.6561 860.986 13.5492 859.463 13.9767C858.844 14.1505 858.332 14.7036 857.951 15.2289C857.856 15.3598 857.683 15.4042 857.601 15.5208C857.461 16.2244 857.134 17.1603 856.619 17.8927C856.536 18.1558 856.533 18.5632 856.53 18.983"
+						stroke="white"
+						stroke-width="13"
+						stroke-linecap="round"
+					/>
+					<path
+						d="M893.15 55.5739C887.405 55.7339 875.479 53.2242 873.741 41.9055"
+						stroke="black"
+						stroke-width="2"
+					/>
+					<path
+						d="M855.139 57.9184C853.522 60.5051 834.307 52.2362 828.144 48.0594C822.174 27.8431 833.792 25.8077 837.015 29.7908C839.56 46.1184 851.082 48.5328 854.973 51.9822C858.255 54.8918 855.658 57.414 855.139 57.9184Z"
+						fill="white"
+					/>
+					<path
+						d="M863.181 9.96913C861.227 12.7132 867.119 18.8473 871.9 21.317C885.337 28.2573 877.728 40.5543 867.439 39.8762C857.15 39.1981 848.431 27.8502 848.501 17.6202C848.557 9.43626 856.548 5.40221 860.536 4.40819C866.04 5.66868 879.494 10.1824 889.284 18.1534C901.522 28.1172 900.177 43.6498 900.951 47.4714C901.569 50.5287 897.548 65.0215 894.235 71.2686C890.882 78.5874 876.729 89.1835 864.101 82.7492C851.473 76.3148 850.917 69.1317 852.218 66.3445M852.218 66.3445C845.404 68.05 839.051 66.1058 821.946 62.393C816.524 61.0844 801.124 53.1225 804.002 43.5248C807.081 33.2572 823.101 44.6412 828.144 48.0594M852.218 66.3445C855.135 60.9706 863.616 50.3972 874.199 51.0946C884.782 51.7921 876.169 65.948 870.541 72.9387M828.144 48.0594C834.307 52.2362 853.522 60.5051 855.139 57.9184C855.658 57.414 858.255 54.8918 854.973 51.9822C851.082 48.5328 839.56 46.1184 837.015 29.7908C833.792 25.8077 822.174 27.8431 828.144 48.0594Z"
+						stroke="black"
+						stroke-width="2"
+					/>
+					<path
+						d="M854.988 51.9824C861.308 53.2967 871.739 51.4697 863.569 39.0807"
+						stroke="black"
+						stroke-width="2"
+					/>
+					<path
+						d="M848.492 18.1564C845.592 17.2471 839.24 18.3008 837.036 29.7906"
+						stroke="black"
+						stroke-width="2"
+					/>
+				</svg>
+				<svg
+					class="yellow-line"
+					width="1534"
+					height="668"
+					viewBox="0 0 1534 668"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M1523 320.909C1410.33 452.006 1095.23 800.345 900.454 585.763C675.311 399.816 472.102 412.737 316 379.5C-91.0747 292.825 -63.9999 66 259.491 66"
+						stroke="#FFF5BA"
+						stroke-width="27"
+					/>
+					<path
+						d="M268.003 35.5082L268.004 35.6846"
+						stroke="white"
+						stroke-width="45"
+						stroke-linecap="round"
+					/>
+					<path
+						d="M256.302 47.604L256.624 47.6015"
+						stroke="white"
+						stroke-width="45"
+						stroke-linecap="round"
+					/>
+					<path
+						d="M288.324 49.7205C291.154 49.3461 293.955 49.4992 294.572 49.759C294.86 49.8801 295.135 49.8447 295.268 49.1161C295.954 45.3333 294.84 44.4425 294.692 42.6233C294.605 41.5443 294.067 40.8607 293.496 40.0422C292.774 39.0058 293.24 38.0449 293.317 37.486C293.418 36.7436 294.142 36.4487 294.196 36.3584C294.457 35.9224 292.883 39.4905 291.618 43.1734C290.859 45.3837 290.882 46.8717 290.761 48.8658C290.422 54.4501 290.938 55.747 290.812 56.9006C290.717 57.7714 290.312 58.5228 290.049 58.8476C288.96 60.1891 287.641 59.7798 286.411 60.2866C284.938 60.8934 283.839 61.0436 282.021 61.204C281.115 61.2838 279.625 61.2523 278.992 61.2572C278.358 61.2621 278.624 61.26 279.053 61.1694C281.004 60.7568 282.797 60.1732 284.358 59.7767C285.823 59.4046 287.197 58.8448 288.162 58.6592C289.615 58.3798 290.892 58.1109 291.755 57.9552C292.735 57.7784 294.005 57.3215 294.782 57.1092C295.439 56.9297 296.094 56.7763 296.738 56.5359C297.381 56.2955 298.127 55.9388 298.959 55.6369C299.646 55.3875 300.269 54.9804 302.428 53.499C303.702 52.6242 304.542 51.8926 305.238 51.3564C305.849 50.8858 306.627 50.582 307.325 50.4276C307.984 50.2821 309.248 50.0892 310.247 49.906C311.135 49.7432 312.095 49.5981 312.953 49.3561C313.776 49.1239 314.398 48.6985 315.041 48.429C315.726 48.142 316.324 47.6854 317.099 47.2376C317.43 47.0468 317.77 46.967 317.878 46.878C317.924 46.8401 317.561 46.8504 317.399 46.939C316.836 47.2447 316.439 48.0302 315.48 48.9795C314.706 49.7466 314.255 50.5199 313.988 51.1085C313.533 52.1139 312.391 52.5909 311.534 53.0393C310.697 53.4774 309.823 53.9053 308.938 54.0593C307.927 54.2353 307.039 54.6322 305.807 55.2872C304.971 55.7314 304.039 55.8299 302.646 55.9896C301.62 56.1072 300.767 56.2678 299.724 56.7749C299.048 57.1037 298.04 57.4034 297.02 57.7376C295.823 58.1295 294.716 58.3144 294.018 58.5244C293.287 58.7442 292.466 58.9772 290.914 59.1955C289.2 59.4365 287.701 59.6029 286.35 59.3796C284.904 59.1405 283.986 58.8095 282.938 58.7866C282.041 58.7671 281.196 59.0637 276.729 59.187C275.112 59.2317 272.576 59.719 270.975 59.8776C270.786 59.8964 270.574 59.9107 270.412 59.9993C269.681 60.3991 269.242 61.6213 269.113 62.8279C269.064 63.2752 269.305 63.6228 269.494 64.0023C269.968 64.9531 270.976 65.3121 271.598 65.6927C271.735 65.7761 271.683 66.1286 271.632 66.3663C271.425 67.3185 270.409 67.7894 269.741 68.2637C268.797 68.9332 268.598 70.1527 267.931 70.7179C267.416 71.1543 266.998 71.7525 266.411 72.1415C265.743 72.5837 265.074 73.0019 264.327 73.4504C263.463 73.9687 262.884 74.4298 262.082 74.996C261.193 75.6244 260.373 76.1565 259.515 76.3104C258.384 76.5129 257.158 76.8867 256.299 76.9824C255.359 77.087 254.531 77.496 253.355 77.6514C250.685 78.0042 250.021 77.2978 249.214 76.9503C248.27 76.5442 247.49 75.7897 246.09 74.9476C245.131 74.3708 244.684 73.6346 244.01 73.1106C243.094 72.4 242.311 71.5962 241.874 70.9222C241.379 70.1582 240.578 69.4928 239.984 68.9374C239.387 68.3785 239.277 67.5626 238.895 66.7717C238.403 65.7514 238.666 64.5722 238.526 63.6869C238.414 62.976 238.166 61.9303 237.999 60.8988C237.864 60.0647 237.398 59.1704 236.936 58.2912C236.34 57.1538 236.307 56.2967 236.033 55.5923C235.966 55.4205 235.924 55.2413 235.899 55.6463C235.737 58.2871 236.058 59.5793 236.225 60.6999C236.261 60.9403 236.335 61.1682 236.389 61.2004C237.404 61.8045 236.316 57.7077 236.171 56.2704C236.084 55.4067 235.707 54.5974 235.511 53.8325C235.316 53.0701 234.992 52.1335 234.825 51.3683C234.651 50.5736 234.119 49.9636 233.922 48.7348C233.394 45.4275 234.026 43.9742 234.179 42.8777C234.309 41.9467 234.468 37.6491 234.745 34.9951C234.828 34.1959 235.46 33.5494 235.885 32.8397C236.295 32.1558 236.573 31.4242 236.865 30.6864C237.223 29.7789 237.74 29.1222 238.245 28.5583C239.121 27.5805 240.349 26.2201 240.883 25.5404C241.541 24.7022 242.269 24.3251 242.911 23.8183C243.506 23.3487 244.192 22.8393 244.86 22.3632C245.646 21.8037 246.437 21.411 247.078 20.7887C247.648 20.2357 248.467 20.1007 249.299 19.8589C249.998 19.6554 250.609 19.2023 251.387 19.1073C252.081 19.0226 252.699 18.6572 253.342 18.4167C253.986 18.1763 254.626 17.8204 255.269 17.4909C255.957 17.138 256.55 16.571 257.193 16.2124C257.977 15.7745 258.635 15.2603 259.411 14.8725C260.061 14.5476 260.722 14.3623 261.392 14.1508C262.196 13.8972 263.08 13.9315 263.912 13.7787C264.58 13.6561 266.926 13.5492 268.449 13.9767C269.068 14.1505 269.58 14.7036 269.961 15.2289C270.056 15.3598 270.229 15.4042 270.312 15.5208C270.451 16.2244 270.778 17.1603 271.293 17.8927C271.377 18.1558 271.379 18.5632 271.382 18.983"
+						stroke="white"
+						stroke-width="13"
+						stroke-linecap="round"
+					/>
+					<path
+						d="M234.762 55.5739C240.507 55.7339 252.433 53.2242 254.172 41.9055"
+						stroke="black"
+						stroke-width="2"
+					/>
+					<path
+						d="M272.773 57.9184C274.39 60.5051 293.605 52.2362 299.768 48.0594C305.738 27.8431 294.12 25.8077 290.897 29.7908C288.352 46.1184 276.83 48.5328 272.939 51.9822C269.657 54.8918 272.254 57.414 272.773 57.9184Z"
+						fill="white"
+					/>
+					<path
+						d="M264.731 9.96913C266.685 12.7132 260.793 18.8473 256.012 21.317C242.575 28.2573 250.184 40.5543 260.473 39.8762C270.762 39.1981 279.481 27.8502 279.411 17.6202C279.355 9.43626 271.364 5.40221 267.376 4.40819C261.872 5.66868 248.418 10.1824 238.628 18.1534C226.39 28.1172 227.735 43.6498 226.961 47.4714C226.343 50.5287 230.364 65.0215 233.677 71.2686C237.03 78.5874 251.183 89.1835 263.811 82.7492C276.439 76.3148 276.995 69.1317 275.695 66.3445M275.695 66.3445C282.508 68.05 288.861 66.1058 305.966 62.393C311.388 61.0844 326.789 53.1225 323.91 43.5248C320.831 33.2572 304.811 44.6412 299.768 48.0594M275.695 66.3445C272.777 60.9706 264.296 50.3972 253.713 51.0946C243.131 51.7921 251.743 65.948 257.372 72.9387M299.768 48.0594C293.605 52.2362 274.39 60.5051 272.773 57.9184C272.254 57.414 269.657 54.8918 272.939 51.9822C276.83 48.5328 288.352 46.1184 290.897 29.7908C294.12 25.8077 305.738 27.8431 299.768 48.0594Z"
+						stroke="black"
+						stroke-width="2"
+					/>
+					<path
+						d="M272.924 51.9824C266.604 53.2967 256.173 51.4697 264.343 39.0807"
+						stroke="black"
+						stroke-width="2"
+					/>
+					<path
+						d="M279.42 18.1564C282.32 17.2471 288.672 18.3008 290.876 29.7906"
+						stroke="black"
+						stroke-width="2"
+					/>
+				</svg>
+				<svg
+					class="blue-line"
+					width="990"
+					height="1301"
+					viewBox="0 0 990 1301"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M33.4998 1277C-35.3371 1303.4 110.872 1274 232 1093.5C293.563 1001.76 506 318.5 728 683C1214.22 1481.32 802.501 221 962.5 10"
+						stroke="#A0C4FF"
+						stroke-width="30"
+					/>
+				</svg>
+				<svg
+					class="green-line"
+					width="1570"
+					height="710"
+					viewBox="0 0 1570 710"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M1565.5 696.5C1486.8 672.981 1174.81 106.943 859.5 340C743.287 425.896 335.757 652.675 291.5 442C247.243 231.325 466.874 -73.2725 3.99989 38"
+						stroke="#B8EBCD"
+						stroke-width="27"
+					/>
+				</svg>
+			</section>
+			<h2>INSCHRIJVING VOOR SAVED BY THE BELL</h2>
+			<form id="inschrijfformulier">
+				<!-- Stap 1: Schoolgegevens -->
+				<div class="step active" id="step1">
+					<h3>1. Schoolgegevens</h3>
+					<div>
+						<label for="school">Naam van de school</label>
+						<input type="text" name="school" required />
+					</div>
+					<div>
+						<label for="straat">Straat + nummer</label>
+						<input type="text" name="straat" required />
+					</div>
+					<div class="form-row">
+						<div class="form-group">
+							<label for="postcode">Postcode</label>
+							<input type="text" name="postcode" required />
+						</div>
 
-            <div class="form-group">
-              <label for="gemeente">Gemeente</label>
-              <input type="text" name="gemeente" required />
-            </div>
-          </div>
-          <h3>Onderwijsniveau</h3>
-          <div>
-            <div class="check">
-              <div><input type="checkbox" name="kleuter" id="kleuter" /></div>
-              <div><label for="kleuter">Kleuteronderwijs</label></div>
-            </div>
-            <div class="check">
-              <div><input type="checkbox" name="lager" id="lager" /></div>
-              <div><label for="lager">Lager onderwijs</label></div>
-            </div>
-            <div class="check">
-              <div>
-                <input type="checkbox" name="secundair" id="secundair" />
-              </div>
-              <div><label for="secundair">Secundair onderwijs</label></div>
-            </div>
-            <div class="check">
-              <div><input type="checkbox" name="hoger" id="hoger" /></div>
-              <div><label for="hoger">Hoger onderwijs</label></div>
-            </div>
-          </div>
-        </div>
-        <!-- Stap 2: Contactpersoon -->
-        <div class="step" id="step2">
-          <h3>2. Contactpersoon</h3>
-          <label for="naam">Naam</label>
-          <input type="text" name="naam" required />
-          <label for="voornaam">Voornaam</label>
-          <input type="text" name="voornaam" required />
-          <label for="email">E-mailadres</label>
-          <input type="email" name="email" required />
-          <label for="telefoon">Telefoonnummer (optioneel)</label>
-          <input type="tel" name="telefoon" />
-        </div>
+						<div class="form-group">
+							<label for="gemeente">Gemeente</label>
+							<input type="text" name="gemeente" required />
+						</div>
+					</div>
+					<h3>Onderwijsniveau</h3>
+					<div>
+						<div class="check">
+							<div><input type="checkbox" name="kleuter" id="kleuter" /></div>
+							<div><label for="kleuter">Kleuteronderwijs</label></div>
+						</div>
+						<div class="check">
+							<div><input type="checkbox" name="lager" id="lager" /></div>
+							<div><label for="lager">Lager onderwijs</label></div>
+						</div>
+						<div class="check">
+							<div>
+								<input type="checkbox" name="secundair" id="secundair" />
+							</div>
+							<div><label for="secundair">Secundair onderwijs</label></div>
+						</div>
+						<div class="check">
+							<div><input type="checkbox" name="hoger" id="hoger" /></div>
+							<div><label for="hoger">Hoger onderwijs</label></div>
+						</div>
+					</div>
+				</div>
+				<!-- Stap 2: Contactpersoon -->
+				<div class="step" id="step2">
+					<h3>2. Contactpersoon</h3>
+					<label for="naam">Naam</label>
+					<input type="text" name="naam" required />
+					<label for="voornaam">Voornaam</label>
+					<input type="text" name="voornaam" required />
+					<label for="email">E-mailadres</label>
+					<input type="email" name="email" required />
+					<label for="telefoon">Telefoonnummer (optioneel)</label>
+					<input type="tel" name="telefoon" />
+				</div>
 
-        <!-- Stap 3: Deelname & toestemming -->
-        <div class="step" id="step3">
-          <h3>3. Deelname & Toestemming</h3>
-          <div>
-            <label for="password">Password</label>
-            <input type="password" name="password" required />
-          </div>
-          <div>
-            <label for="password1">Confirm password</label>
-            <input type="password" name="password1" required />
-          </div>
-          <div class="check">
-            <div><input type="checkbox" name="toestemming" required /></div>
-            <div>
-              <label for="toestemming"
-                >Ik ga akkoord met de privacyvoorwaarden</label
-              >
-            </div>
-          </div>
-        </div>
+				<!-- Stap 3: Deelname & toestemming -->
+				<div class="step" id="step3">
+					<h3>3. Deelname & Toestemming</h3>
+					<div>
+						<label for="password">Password</label>
+						<input type="password" name="password" required />
+					</div>
+					<div>
+						<label for="password1">Confirm password</label>
+						<input type="password" name="password1" required />
+					</div>
+					<div class="check">
+						<div><input type="checkbox" name="toestemming" required /></div>
+						<div>
+							<label for="toestemming"
+								>Ik ga akkoord met de privacyvoorwaarden</label
+							>
+						</div>
+					</div>
+				</div>
 
-        <div class="navigation">
-          <button
-            class="button"
-            type="button"
-            id="backBtn"
-            onclick="changeStep(-1)"
-          >
-            Vorige
-          </button>
-          <button
-            class="button"
-            type="button"
-            id="nextBtn"
-            onclick="changeStep(1)"
-          >
-            Volgende
-          </button>
-          <button
-            class="button"
-            type="submit"
-            id="submitBtn"
-            style="display: none"
-          >
-            Inschrijven
-          </button>
-        </div>
-      </form>
-      <p>Heb je al een account? <a class="login" href="login.html">login</a></p>
-    </main>
-    <footer>
-      <div class="test">
-        <div class="footer-menu">
-          <div><a href="../index.html">Home</a></div>
-          <div><a href="overons.html">Over ons</a></div>
-          <div><a href="materiaal.html">Lesmateriaal</a></div>
-          <div><a href="contact.html">Contact</a></div>
-        </div>
+				<div class="navigation">
+					<button
+						class="button"
+						type="button"
+						id="backBtn"
+						onclick="changeStep(-1)"
+					>
+						Vorige
+					</button>
+					<button
+						class="button"
+						type="button"
+						id="nextBtn"
+						onclick="changeStep(1)"
+					>
+						Volgende
+					</button>
+					<button
+						class="button"
+						type="submit"
+						id="submitBtn"
+						style="display: none"
+					>
+						Inschrijven
+					</button>
+				</div>
+			</form>
+			<p>Heb je al een account? <a class="login" href="login.html">login</a></p>
+		</main>
+		<footer>
+			<div class="test">
+				<div class="footer-menu">
+					<div><a href="../index.html">Home</a></div>
+					<div><a href="overons.html">Over ons</a></div>
+					<div><a href="materiaal.html">Lesmateriaal</a></div>
+					<div><a href="contact.html">Contact</a></div>
+				</div>
 
-        <div class="adresse">
-          <div>Huidevettersstraat 165</div>
-          <div>1000 Brussel</div>
-          <div>02 520 05 30</div>
-          <div>www.studioglobo.be</div>
-        </div>
-      </div>
-      <div class="sbtb">
-        <div>
-          <h6>Saved by the bell<br />is een actie van:</h6>
-        </div>
-        <div>
-          <img
-            src="../images/studio logo.svg"
-            alt="Studio Globo"
-            class="footer-logo"
-          />
-        </div>
-        <div>
-          <img
-            src="../images/de keure.svg"
-            alt="de Keure"
-            class="footer-logo"
-          />
-        </div>
-      </div>
+				<div class="adresse">
+					<div>Huidevettersstraat 165</div>
+					<div>1000 Brussel</div>
+					<div>02 520 05 30</div>
+					<div>www.studioglobo.be</div>
+				</div>
+			</div>
+			<div class="sbtb">
+				<div>
+					<h6>Saved by the bell<br />is een actie van:</h6>
+				</div>
+				<div>
+					<img
+						src="../images/studio logo.svg"
+						alt="Studio Globo"
+						class="footer-logo"
+					/>
+				</div>
+				<div>
+					<img
+						src="../images/de keure.svg"
+						alt="de Keure"
+						class="footer-logo"
+					/>
+				</div>
+			</div>
 
-      <div class="footer-icon">
-        <div class="disclaim">
-          <a href="./Footer word and pdf's/Disclaimer Studio Globo.pdf"
-            >Disclaimer</a
-          ><br />
-          <a href="./Footer word and pdf's/Privacyverklaring Studio Globo.pdf"
-            >Privacyverklaring</a
-          >
-        </div>
-        <div class="socials">
-          <div>
-            <a href="#"><img src="../images/youtube.svg" alt="YouTube" /></a>
-          </div>
-          <div>
-            <a href="#"><img src="../images/facebook.svg" alt="Facebook" /></a>
-          </div>
-        </div>
-      </div>
+			<div class="footer-icon">
+				<div class="disclaim">
+					<a href="./Footer word and pdf's/Disclaimer Studio Globo.pdf"
+						>Disclaimer</a
+					><br />
+					<a href="./Footer word and pdf's/Privacyverklaring Studio Globo.pdf"
+						>Privacyverklaring</a
+					>
+				</div>
+				<div class="socials">
+					<div>
+						<a href="#"><img src="../images/youtube.svg" alt="YouTube" /></a>
+					</div>
+					<div>
+						<a href="#"><img src="../images/facebook.svg" alt="Facebook" /></a>
+					</div>
+				</div>
+			</div>
 
-      <h6 class="copyright">
-        © 2025 Studio Globo – website door EhB Studenten
-      </h6>
-    </footer>
-    <script src="../js/Hamburger.js"></script>
-    <script src="../js/signup.js"></script>
-  </body>
+			<h6 class="copyright">
+				© 2025 Studio Globo – website door EhB Studenten
+			</h6>
+		</footer>
+		<script src="../js/Hamburger.js"></script>
+		<script src="../js/signup.js"></script>
+	</body>
 </html>
