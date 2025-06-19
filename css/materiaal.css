@@ -1,68 +1,80 @@
+body {
+	position: relative;
+	background-image: url("../images/Lines\ -\ materiaal.svg");
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 300% auto;
+}
+
 .card-wrapper {
-  margin-top: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  padding-inline: 20%;
-  text-align: start;
+	margin-top: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+	padding-inline: 20%;
+	text-align: start;
 }
 
 .card {
-  flex: 1 1 100%;
-  max-width: 100%;
-  border: 1px solid #ddd;
-  border-radius: 20px;
-  overflow: hidden;
-  font-family: sans-serif;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  background: white;
+	flex: 1 1 100%;
+	max-width: 100%;
+	border: 1px solid #ddd;
+	border-radius: 20px;
+	overflow: hidden;
+	font-family: sans-serif;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	background: white;
 }
 
 .card-img {
-  background-color: #7a848e;
-  height: 18vw;
+	background-color: #7a848e;
+	height: 18vw;
 }
 
 .card-body {
-  padding: 16px;
-  position: relative;
+	padding: 16px;
+	position: relative;
 }
 
 .card-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0 0 8px;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0 0 8px;
 }
 
 .download-icon {
-  position: absolute;
-  bottom: 16px;
-  right: 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #ffa63d;
-  transition: color 0.2s ease;
+	position: absolute;
+	bottom: 16px;
+	right: 16px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #ffa63d;
+	transition: color 0.2s ease;
 }
 
 .download-icon:hover {
-  color: #0056b3;
+	color: #0056b3;
 }
 
 ul li:nth-child(3) a {
-  color: #ffa63d;
-  font-weight: bold;
+	color: #ffa63d;
+	font-weight: bold;
 }
 
 @media (min-width: 600px) {
-  .card {
-    flex: 1 1 calc(50% - 20px);
-    max-width: calc(50% - 20px);
-  }
+	.card {
+		flex: 1 1 calc(50% - 20px);
+		max-width: calc(50% - 20px);
+	}
 }
 
 @media (min-width: 1024px) {
-  .off-screen-menu ul li {
-    margin-top: -1.6rem;
-  }
+	body {
+		background-image: none;
+	}
+
+	.off-screen-menu ul li {
+		margin-top: -1.6rem;
+	}
 }
