@@ -1,7 +1,6 @@
 footer {
 	background: #f7a6a6;
 	padding: 1.5rem 1rem 1rem 1rem;
-	margin-top: 5rem;
 	text-align: left;
 	color: white;
 }
@@ -56,4 +55,16 @@ footer a {
 
 body {
 	margin: 0;
+}
+
+@media (min-width: 320px) {
+	footer {
+		margin-top: 80%;
+	}
+}
+
+@media (min-width: 1024px) {
+	footer {
+		margin-top: 30%;
+	}
 }
