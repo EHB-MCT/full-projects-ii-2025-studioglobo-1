@@ -36,22 +36,21 @@ textarea {
 }
 
 .leaflet-popup-content .school-popup {
-  font-family: Arial, sans-serif;
-  background: #f9fafc;
-  padding: 12px 10px;
-  border-radius: 10px;
-  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
-  min-width: 180px;
+	font-family: Arial, sans-serif;
+	background: #f9fafc;
+	padding: 12px 10px;
+	border-radius: 10px;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+	min-width: 180px;
 }
 .school-popup h3 {
-  font-size: 1.08em;
-  margin: 0 0 6px 0;
-  color: #20527a;
+	font-size: 1.08em;
+	margin: 0 0 6px 0;
+	color: #20527a;
 }
 .school-popup b {
-  color: #222;
+	color: #222;
 }
-
 
 .search-bar {
 	border-radius: 12px 0 0 12px;

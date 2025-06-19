@@ -1,0 +1,115 @@
+.form-row {
+	display: flex;
+	gap: 16px;
+}
+
+.form-row .form-group {
+	flex: 1;
+}
+
+label {
+	color: white;
+	font-size: 12pt;
+	text-align: left;
+	font-weight: bold;
+	margin-bottom: 5px;
+	display: block;
+}
+
+input,
+select,
+textarea {
+	text-align: left;
+	width: 100%;
+	padding: 8px 12px;
+	border-radius: 6px;
+	font-size: 15px;
+	border: 1px solid #000;
+	resize: vertical;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: none;
+	background-image: url(../images/Lines\ Contact\ Mobile.svg);
+	top: 0;
+	background-size: 100% 100%;
+}
+
+.bg-image svg {
+	display: none;
+}
+
+.login {
+	text-decoration: underline;
+}
+
+@media (min-width: 1024px) {
+	body {
+		background-image: none;
+	}
+
+	.bg-image svg {
+		display: block;
+	}
+
+	@keyframes subtle-rotate {
+		0% {
+			transform: rotate(0deg);
+		}
+		50% {
+			transform: rotate(1.5deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}
+
+	footer {
+		overflow: hidden;
+	}
+
+	.bg-image {
+		position: relative;
+		width: 100%;
+		height: auto;
+	}
+
+	.bg-image svg {
+		animation: subtle-rotate 5s ease-in-out infinite;
+		transform-origin: center;
+	}
+
+	.blue-line {
+		position: absolute;
+		width: 75vw;
+		top: 11rem;
+		left: 2rem;
+		height: auto;
+		object-fit: cover;
+		z-index: -1;
+	}
+
+	.red-line {
+		position: absolute;
+		width: 50rem;
+		top: -5rem;
+		height: auto;
+		object-fit: cover;
+		z-index: -2;
+	}
+
+	.green-line {
+		position: absolute;
+		width: 120rem;
+		top: 0;
+		height: auto;
+		object-fit: cover;
+		z-index: -3;
+	}
+
+	.off-screen-menu ul li {
+		margin-top: -1.6rem;
+	}
+}
