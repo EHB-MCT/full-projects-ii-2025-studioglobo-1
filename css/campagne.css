@@ -74,7 +74,7 @@ ul li:nth-child(4) a {
 
 	.red-line {
 		position: absolute;
-		width: 73rem;
+		width: 55rem;
 		top: 0rem;
 		left: 15vw;
 		height: auto;
@@ -101,16 +101,17 @@ ul li:nth-child(4) a {
 		z-index: -4;
 	}
 
-	p {
+	.main p {
 		text-align: start;
 		margin-bottom: 5rem;
 		line-height: 1.6;
 	}
 
-	img {
+	.main img {
 		width: 30%;
 		height: 100%;
 	}
+
 	.off-screen-menu ul li {
 		margin-top: -1.6rem;
 	}
