@@ -28,9 +28,13 @@ textarea {
 	box-sizing: border-box;
 }
 
+.bg-image svg {
+	display: none;
+}
+
 body {
 	background-image: none;
-	background-image: url(../images/Lines\ Contact\ Mobile.svg);
+	background-image: url("../images/Lines\ Contact\ Mobile.svg");
 	background-size: 200% auto;
 	background-repeat: no-repeat;
 	background-position: top center;
@@ -44,8 +48,77 @@ ul li:nth-child(5) a {
 @media (min-width: 1024px) {
 	body {
 		background-image: none;
-		background-image: url("../images/Lines\ Contact\ Desktop.svg");
-		background-size: 100% 100%;
+	}
+
+	.bg-image svg {
+		display: block;
+	}
+
+	@keyframes subtle-rotate {
+		0% {
+			transform: rotate(0deg);
+		}
+		50% {
+			transform: rotate(1.5deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}
+
+	footer {
+		overflow: hidden;
+	}
+
+	.bg-image {
+		position: relative;
+		width: 100%;
+		height: auto;
+	}
+
+	.bg-image svg {
+		animation: subtle-rotate 5s ease-in-out infinite;
+		transform-origin: center;
+	}
+
+	.blue-line {
+		position: absolute;
+		width: 75vw;
+		top: -15rem;
+		left: -65rem;
+		height: auto;
+		object-fit: cover;
+		z-index: -5;
+	}
+
+	.red-line {
+		position: absolute;
+		width: 73rem;
+		top: 10rem;
+		left: 25rem;
+		height: auto;
+		object-fit: cover;
+		z-index: -2;
+	}
+
+	.yellow-line {
+		position: absolute;
+		width: 125rem;
+		top: 10rem;
+		left: 5rem;
+		height: auto;
+		object-fit: cover;
+		z-index: -3;
+	}
+
+	.green-line {
+		position: absolute;
+		width: 150rem;
+		top: 0;
+		left: -20rem;
+		height: auto;
+		object-fit: cover;
+		z-index: -4;
 	}
 
 	.off-screen-menu ul li {

@@ -29,6 +29,14 @@ input[type="checkbox"] {
 	accent-color: white;
 }
 
+body {
+	background-image: none;
+	background-image: url("../images/Lines\ Contact\ Mobile.svg");
+	background-size: 200% auto;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
 @media (min-width: 1024px) {
 	footer {
 		margin-top: 25rem;
