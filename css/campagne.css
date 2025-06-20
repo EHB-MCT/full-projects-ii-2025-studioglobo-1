@@ -1,0 +1,118 @@
+.bg-image svg {
+	display: none;
+}
+
+.main {
+	margin-inline: 20%;
+	gap: 5rem;
+}
+
+body {
+	background-image: none;
+	background-image: url("../images/Lines\ -\ Home\ Mobile\ V2.svg");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+p {
+	margin-bottom: 5rem;
+	line-height: 1.6;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+ul li:nth-child(4) a {
+	color: #ffa63d;
+	font-weight: bold;
+}
+
+@media (min-width: 1024px) {
+	.main {
+		display: flex;
+		margin-inline: 20%;
+		gap: 5rem;
+	}
+
+	body {
+		background-image: none;
+	}
+
+	.bg-image svg {
+		display: block;
+	}
+
+	@keyframes subtle-rotate {
+		0% {
+			transform: rotate(0deg);
+		}
+		50% {
+			transform: rotate(1.5deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}
+
+	footer {
+		overflow: hidden;
+	}
+
+	.bg-image {
+		position: relative;
+		width: 100%;
+		height: auto;
+	}
+
+	.bg-image svg {
+		animation: subtle-rotate 5s ease-in-out infinite;
+		transform-origin: center;
+	}
+
+	.red-line {
+		position: absolute;
+		width: 55rem;
+		top: 0rem;
+		left: 15vw;
+		height: auto;
+		object-fit: cover;
+		z-index: -2;
+	}
+
+	.yellow-line {
+		position: absolute;
+		width: 125rem;
+		left: -3rem;
+		height: auto;
+		object-fit: cover;
+		z-index: -3;
+	}
+
+	.green-line {
+		position: absolute;
+		width: 150rem;
+		top: 0;
+		left: -20rem;
+		height: auto;
+		object-fit: cover;
+		z-index: -4;
+	}
+
+	.main p {
+		text-align: start;
+		margin-bottom: 5rem;
+		line-height: 1.6;
+	}
+
+	.main img {
+		width: 30%;
+		height: 100%;
+	}
+
+	.off-screen-menu ul li {
+		margin-top: -1.6rem;
+	}
+}
