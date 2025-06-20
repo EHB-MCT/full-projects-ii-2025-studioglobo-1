@@ -62,7 +62,14 @@ ul li:nth-child(3) a {
 	font-weight: bold;
 }
 
-@media (min-width: 600px) {
+.nav {
+	display: flex;
+	flex-direction: column;
+	margin: 0 20% 0 20%;
+	gap: 1rem;
+}
+
+@media (min-width: 768px) {
 	.card {
 		flex: 1 1 calc(50% - 20px);
 		max-width: calc(50% - 20px);
@@ -72,9 +79,18 @@ ul li:nth-child(3) a {
 @media (min-width: 1024px) {
 	body {
 		background-image: none;
+		background-image: url("../images/background\ lines\ materiaal\ test.svg");
+		background-size: 350% auto;
+		background-repeat: no-repeat;
+		background-position: top center;
 	}
 
 	.off-screen-menu ul li {
 		margin-top: -1.6rem;
+	}
+
+	.nav {
+		display: block;
+		flex-direction: row;
 	}
 }
