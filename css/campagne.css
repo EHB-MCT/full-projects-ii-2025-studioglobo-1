@@ -1,3 +1,7 @@
+.bg-image svg {
+	display: none;
+}
+
 .main {
 	margin-inline: 20%;
 	gap: 5rem;
@@ -24,10 +28,6 @@ img {
 ul li:nth-child(4) a {
 	color: #ffa63d;
 	font-weight: bold;
-}
-
-.bg-image svg {
-	display: none;
 }
 
 @media (min-width: 1024px) {
